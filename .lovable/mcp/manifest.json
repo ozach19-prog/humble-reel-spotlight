@@ -1,0 +1,133 @@
+{
+  "version": 1,
+  "sdk_version": "0.26.1",
+  "path": "/mcp",
+  "auth": {
+    "type": "none"
+  },
+  "mcp": {
+    "server": {
+      "name": "boutique-film-landing",
+      "version": "0.1.0",
+      "title": "Boutique Film Landing"
+    },
+    "tools": [
+      {
+        "name": "get_company_info",
+        "title": "Get company info",
+        "description": "Get Pozitiv Films' public company introduction and contact details (email, phone, address, Instagram).",
+        "annotations": {
+          "readOnlyHint": true,
+          "idempotentHint": true,
+          "openWorldHint": false
+        },
+        "inputSchema": {
+          "$schema": "http://json-schema.org/draft-07/schema#",
+          "type": "object",
+          "properties": {
+            "language": {
+              "description": "Language for descriptive fields. Defaults to en.",
+              "type": "string",
+              "enum": [
+                "cs",
+                "en"
+              ]
+            }
+          }
+        },
+        "outputSchema": null
+      },
+      {
+        "name": "list_projects",
+        "title": "List projects",
+        "description": "List Pozitiv Films' film projects with slug, title, status, year, format and logline. Optionally filter by production status.",
+        "annotations": {
+          "readOnlyHint": true,
+          "idempotentHint": true,
+          "openWorldHint": false
+        },
+        "inputSchema": {
+          "$schema": "http://json-schema.org/draft-07/schema#",
+          "type": "object",
+          "properties": {
+            "status": {
+              "description": "Optional filter: produced, production (in production) or development.",
+              "type": "string",
+              "enum": [
+                "produced",
+                "production",
+                "development"
+              ]
+            },
+            "language": {
+              "description": "Language for descriptive fields. Defaults to en.",
+              "type": "string",
+              "enum": [
+                "cs",
+                "en"
+              ]
+            }
+          }
+        },
+        "outputSchema": null
+      },
+      {
+        "name": "get_project",
+        "title": "Get project",
+        "description": "Get the full public details of one Pozitiv Films project by slug: status, format, length, logline, synopsis and credits.",
+        "annotations": {
+          "readOnlyHint": true,
+          "idempotentHint": true,
+          "openWorldHint": false
+        },
+        "inputSchema": {
+          "$schema": "http://json-schema.org/draft-07/schema#",
+          "type": "object",
+          "properties": {
+            "slug": {
+              "type": "string",
+              "description": "Project slug. One of: mistrovi, rani-smena, kolotoc, ticha-voda, pole."
+            },
+            "language": {
+              "description": "Language for descriptive fields. Defaults to en.",
+              "type": "string",
+              "enum": [
+                "cs",
+                "en"
+              ]
+            }
+          },
+          "required": [
+            "slug"
+          ]
+        },
+        "outputSchema": null
+      },
+      {
+        "name": "list_founders",
+        "title": "List founders",
+        "description": "Get the public biographies of Pozitiv Films' founders, including role, bio, selected credits and contact email.",
+        "annotations": {
+          "readOnlyHint": true,
+          "idempotentHint": true,
+          "openWorldHint": false
+        },
+        "inputSchema": {
+          "$schema": "http://json-schema.org/draft-07/schema#",
+          "type": "object",
+          "properties": {
+            "language": {
+              "description": "Language for descriptive fields. Defaults to en.",
+              "type": "string",
+              "enum": [
+                "cs",
+                "en"
+              ]
+            }
+          }
+        },
+        "outputSchema": null
+      }
+    ]
+  }
+}
