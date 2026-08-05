@@ -21,9 +21,19 @@ export const Route = createFileRoute("/about")({
         content: "Dva zakladatelé, malý štáb a filmy, u kterých zůstáváme do konce.",
       },
       { property: "og:url", content: "/about" },
+      { property: "og:type", content: "profile" },
+      { property: "og:site_name", content: "Pozitiv Films" },
+      { property: "og:locale", content: "cs_CZ" },
+      { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: "O nás — Pozitiv Films" },
+      {
+        name: "twitter:description",
+        content: "Dva zakladatelé, malý štáb a filmy, u kterých zůstáváme do konce.",
+      },
     ],
     links: [{ rel: "canonical", href: "/about" }],
   }),
+
   component: AboutPage,
 });
 

@@ -24,9 +24,19 @@ export const Route = createFileRoute("/")({
         content: "Dokumentární a hrané filmy z Prahy. Malý štáb, skutečné příběhy.",
       },
       { property: "og:url", content: "/" },
+      { property: "og:type", content: "website" },
+      { property: "og:site_name", content: "Pozitiv Films" },
+      { property: "og:locale", content: "cs_CZ" },
+      { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: "Pozitiv Films — butiková filmová produkce" },
+      {
+        name: "twitter:description",
+        content: "Dokumentární a hrané filmy z Prahy. Malý štáb, skutečné příběhy.",
+      },
     ],
     links: [{ rel: "canonical", href: "/" }],
   }),
+
   component: Home,
 });
 

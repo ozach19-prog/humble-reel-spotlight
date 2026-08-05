@@ -22,9 +22,19 @@ export const Route = createFileRoute("/projects/")({
         content: "Dokončené filmy, projekty ve výrobě a látky ve vývoji.",
       },
       { property: "og:url", content: "/projects" },
+      { property: "og:type", content: "website" },
+      { property: "og:site_name", content: "Pozitiv Films" },
+      { property: "og:locale", content: "cs_CZ" },
+      { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: "Projekty — Pozitiv Films" },
+      {
+        name: "twitter:description",
+        content: "Dokončené filmy, projekty ve výrobě a látky ve vývoji.",
+      },
     ],
     links: [{ rel: "canonical", href: "/projects" }],
   }),
+
   component: ProjectsPage,
 });
 
