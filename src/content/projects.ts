@@ -2,7 +2,7 @@ import nahradniciStill from "@/assets/nahradnici-still.jpg.asset.json";
 import project2 from "@/assets/project-2.jpg";
 import project3 from "@/assets/project-3.jpg";
 import project4 from "@/assets/project-4.jpg";
-import project5 from "@/assets/project-5.jpg";
+import ctyrhraStill from "@/assets/ctyrhra-still.png.asset.json";
 
 export type ProjectStatus = "produced" | "production" | "development";
 
