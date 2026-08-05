@@ -19,11 +19,17 @@ export const Route = createFileRoute("/projects/$slug")({
         { property: "og:description", content: description },
         { property: "og:type", content: "article" },
         { property: "og:url", content: `/projects/${params.slug}` },
+        { property: "og:site_name", content: "Pozitiv Films" },
+        { property: "og:locale", content: "cs_CZ" },
+        { name: "twitter:card", content: "summary_large_image" },
+        { name: "twitter:title", content: title },
+        { name: "twitter:description", content: description },
         ...(project ? [] : [{ name: "robots", content: "noindex" }]),
       ],
       links: [{ rel: "canonical", href: `/projects/${params.slug}` }],
     };
   },
+
   component: ProjectDetail,
 });
 
