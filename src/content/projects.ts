@@ -1,6 +1,6 @@
 import nahradniciStill from "@/assets/nahradnici-still.jpg.asset.json";
 import mladaKrevStill from "@/assets/mlada-krev-still.webp.asset.json";
-import project4 from "@/assets/project-4.jpg";
+import mladaKrev2Still from "@/assets/mlada-krev-2-still.jpeg.asset.json";
 import ctyrhraStill from "@/assets/ctyrhra-still.png.asset.json";
 import marikaStill from "@/assets/marika-still.jpg.asset.json";
 
