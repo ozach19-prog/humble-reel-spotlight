@@ -1,8 +1,8 @@
 import nahradniciStill from "@/assets/nahradnici-still.jpg.asset.json";
 import project2 from "@/assets/project-2.jpg";
-import project3 from "@/assets/project-3.jpg";
 import project4 from "@/assets/project-4.jpg";
 import ctyrhraStill from "@/assets/ctyrhra-still.png.asset.json";
+import marikaStill from "@/assets/marika-still.jpg.asset.json";
 
 export type ProjectStatus = "produced" | "production" | "development";
 
@@ -35,6 +35,7 @@ const roles = {
   designer: { cs: "Architekt", en: "Production designer" },
   costume: { cs: "Kostýmy", en: "Costume designer" },
   sound: { cs: "Zvuk", en: "Sound" },
+  casting: { cs: "Casting", en: "Casting" },
 } as const;
 
 export const projects: Project[] = [
