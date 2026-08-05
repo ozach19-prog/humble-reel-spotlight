@@ -22,13 +22,15 @@ export function Header() {
           <nav className="flex items-center gap-5">
             {nav.map((item) => (
               <Link
-                key={item.to}
+                key={item.label.en}
                 to={item.to}
+                {...(item.hash ? { hash: item.hash } : {})}
                 className="transition-colors hover:text-primary"
-                activeProps={{ className: "text-primary" }}
+                activeProps={{ className: item.hash ? "" : "text-primary" }}
               >
                 {item.label[lang]}
               </Link>
+
             ))}
           </nav>
           <div className="flex items-center gap-1 border-l border-border pl-4 text-xs">
