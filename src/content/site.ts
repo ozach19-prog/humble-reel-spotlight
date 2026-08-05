@@ -94,7 +94,7 @@ export const founders = [
         en: "He is drawn to fiction made with documentary methods — a small crew, real locations, long preparation.",
       },
     ],
-    credits: ["Ranní směna (2024)", "Tichá voda (ve výrobě)", "Mistrovi (2025)"],
+    credits: ["Ranní směna (2024)", "Tichá voda (ve výrobě)", "Náhradníci (2024)"],
   },
   {
     name: "Tereza Malá",
@@ -111,6 +111,6 @@ export const founders = [
         en: "She works observationally: months with people before the camera is switched on.",
       },
     ],
-    credits: ["Mistrovi (2025)", "Kolotoč (ve výrobě)", "Pole (ve vývoji)"],
+    credits: ["Náhradníci (2024)", "Kolotoč (ve výrobě)", "Pole (ve vývoji)"],
   },
 ];

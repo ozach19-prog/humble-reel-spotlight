@@ -1,4 +1,4 @@
-import project1 from "@/assets/project-1.jpg";
+import nahradniciStill from "@/assets/nahradnici-still.jpg.asset.json";
 import project2 from "@/assets/project-2.jpg";
 import project3 from "@/assets/project-3.jpg";
 import project4 from "@/assets/project-4.jpg";
@@ -20,6 +20,7 @@ export type Project = {
   credits: { role: Bi; name: string }[];
   still: string;
   stillAlt: Bi;
+  externalLinks?: { label: Bi; url: string }[];
 };
 
 const roles = {
@@ -27,42 +28,70 @@ const roles = {
   dop: { cs: "Kamera", en: "Cinematographer" },
   producer: { cs: "Produkce", en: "Producer" },
   editor: { cs: "Střih", en: "Editor" },
+  writer: { cs: "Scénář", en: "Written by" },
+  broadcaster: { cs: "Premiéra", en: "Premiere" },
+  award: { cs: "Ocenění", en: "Award" },
+  cast: { cs: "Hrají", en: "Cast" },
 } as const;
 
 export const projects: Project[] = [
   {
-    slug: "mistrovi",
-    title: "Mistrovi",
+    slug: "nahradnici",
+    title: "Náhradníci",
     status: "produced",
-    year: "2025",
-    format: { cs: "Dokument", en: "Documentary" },
-    length: { cs: "72 min", en: "72 min" },
+    year: "2024",
+    format: { cs: "Komediální série", en: "Comedy series" },
+    length: { cs: "8 × 55 min", en: "8 × 55 min" },
     logline: {
-      cs: "Poslední dva výrobci dřevěných forem v zemi předávají řemeslo, které už nikdo nechce.",
-      en: "The last two wooden mould makers in the country pass on a craft nobody wants anymore.",
+      cs: "Manželé, kteří touží po dítěti, zinscenují fingovaný rozvod a svatbu s gruzínskou náhradní matkou — a absurdní komplikace začnou, když se k nim nastěhuje i se svými dětmi a násilnickým ex-partnerem.",
+      en: "Desperate to conceive, a Czech couple orchestrates a sham divorce and marriage with a Georgian surrogate mother, leading to a series of absurd logistical and legal complications when she moves into their home with her children and an abusive ex-partner.",
     },
     synopsis: [
       {
-        cs: "Ve workshopu na okraji města pracují dva muži na formách, které se dnes vyrábějí strojově za pár minut. Film je s nimi rok — od zimní zakázky, která má dílnu zachránit, po rozhodnutí, co bude dál.",
-        en: "In a workshop on the edge of town, two men make moulds that machines now produce in minutes. The film stays with them for a year — from the winter order meant to save the workshop to the decision about what comes next.",
+        cs: "Po deseti letech neúspěšných pokusů o početí se Eva a Otakar Krásovi rozhodnou pro náhradní mateřství jako poslední možnost, jak založit rodinu. Kvůli právní nejasnosti náhradního mateřství v Česku hledají pomoc u agentury v Gruzii. Tam najdou Mariam — mladou, inteligentní matku dvou dcer, pro kterou je náhradní mateřství šancí uniknout tíživým podmínkám.",
+        en: "After a decade of unsuccessful attempts at natural and assisted conception, Eva and Otakar Krása turn to surrogacy as their last resort to start a family. Due to the legal ambiguity of surrogate motherhood in the Czech Republic, they seek the help of an agency in Georgia. There, they discover Mariam, a young, intelligent single mother of two beautiful daughters for whom surrogacy represents a chance to escape her dire living conditions.",
       },
       {
-        cs: "Pozorovací dokument bez komentáře, snímaný převážně v přirozeném světle jedním kameramanem.",
-        en: "An observational documentary without narration, shot mostly in available light by a single cinematographer.",
+        cs: "Aby se vyhnuli rostoucím poplatkům agentury, dohodnou se s Mariam přímo a vymyslí neortodoxní právní obchvat: Otakar se rozvede s Evou a vezme si Mariam, takže dítě automaticky získá české občanství. Přivezou Mariam do Prahy, sehrají fingovanou svatbu a inseminaci provedou doma. Mariam se vrátí do Gruzie a zakrátko posílá ultrazvuk. Eva začne před přáteli a konzervativní tchyní Olgou předstírat vlastní těhotenství — a vše se zdá jít podle plánu.",
+        en: "To avoid escalating agency costs that threaten to deplete their life savings, the couple strikes a deal directly with Mariam, devising an unconventional legal workaround: Otakar will divorce Eva and marry Mariam, ensuring that the child automatically receives Czech citizenship. They bring Mariam to Prague, stage a fake marriage, and, to avoid official medical scrutiny, perform artificial insemination at home. Mariam returns to Georgia and soon sends back an ultrasound image proving the success of the entire operation. To keep the arrangement hidden from friends and Otakar's conservative mother, Olga, Eva begins to fake her own pregnancy, and everything seems to be going as planned.",
+      },
+      {
+        cs: "Pečlivá konstrukce se zhroutí, když Mariam uteče před násilnickým partnerem Levanem a bez ohlášení se objeví u Krásových — s bříškem, velkým kufrem a oběma dcerami. Tichá domácnost se mění v přetlakový hrnec kultur, skrytých identit a praktického chaosu. A když Levan Mariam v Praze vypátrá a začne Krásovy vydírat, vyjde najevo další tajemství o otcovství nenarozeného dítěte. Eva mezitím s překvapením zjistí, že je sama těhotná.",
+        en: "The meticulous arrangement shatters when Mariam flees Tbilisi and her abusive partner Levan, and suddenly arrives unannounced at the Krásas' home with a baby bump, a large suitcase and both her biological children in tow. The once-quiet household quickly transforms into a pressure cooker of conflicting cultures, concealed identities and practical chaos. The situation escalates when Levan tracks Mariam to Prague and begins blackmailing the couple, threatening to expose their surrogacy solution — and Mariam reveals another secret that casts doubt on the unborn child's paternity. Meanwhile, Eva is astonished to discover that she is pregnant herself.",
+      },
+      {
+        cs: "„Zlatého ledňáčka jsme dali sérii, která mistrovsky pracuje s tvůrčím jazykem a svěžestí i humorem svých postav a vyprávěcím řemeslem obstojí v jakémkoli mezinárodním srovnání.“ — porota Finále Plzeň 2025",
+        en: "\u201cWe gave the Golden Kingfisher to a show which uses the creative vocabulary masterfully and stands up to any international comparison in the freshness and humour of its characters and the skillfulness of its storytelling.\u201d — Finále Plzeň 2025 jury",
       },
     ],
     credits: [
-      { role: roles.director, name: "Tereza Malá" },
-      { role: roles.dop, name: "Jan Beneš" },
-      { role: roles.producer, name: "Martin Hruška" },
-      { role: roles.editor, name: "Adam Vrba" },
+      { role: roles.writer, name: "Alice Nellis" },
+      { role: roles.director, name: "Alice Nellis, Jiří Havelka" },
+      {
+        role: roles.producer,
+        name: "Lucia Kršáková (FTV Prima), Klára Bukovská (Pozitiv Films), Ondřej Zach (Pozitiv Films)",
+      },
+      { role: roles.broadcaster, name: "FTV Prima, 2024" },
+      {
+        role: roles.award,
+        name: "Zlatý ledňáček — nejlepší TV projekt a internetová produkce, Finále Plzeň 2025",
+      },
+      {
+        role: roles.cast,
+        name: "Jana Plodková, Kryštof Hádek, Iva Janžurová, Mariam Khundadze, Zuzana Stivínová, Adam Ernest, Vica Kerekeš, Sára Arnsteinová, Julia Issa, Zuzana Čapková, Jitka Smutná, Jiří Bábek, Melania Melekishvili, Anastasia Alavidze, Lizi Liklikadze, Anastasia Lomtadze",
+      },
     ],
-    still: project1,
+    still: nahradniciStill.url,
     stillAlt: {
-      cs: "Řemeslník pracující v dílně v přirozeném světle",
-      en: "Craftsman working in a workshop in natural light",
+      cs: "Klíčová grafika série Náhradníci — Eva, Otakar a náhradní matka Mariam",
+      en: "Key art for the series Substitutes — Eva, Otakar and surrogate mother Mariam",
     },
+    externalLinks: [
+      { label: { cs: "Finále Plzeň", en: "Finále Plzeň" }, url: "https://www.festivalfinale.cz/eng/" },
+      { label: { cs: "ČSFD", en: "ČSFD" }, url: "https://www.csfd.cz/en/film/1565912-surrogates/overview/" },
+    ],
   },
+
   {
     slug: "rani-smena",
     title: "Ranní směna",
