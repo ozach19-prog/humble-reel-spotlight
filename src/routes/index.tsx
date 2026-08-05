@@ -1,101 +1,63 @@
-import { createFileRoute } from "@tanstack/react-router";
-import logo from "@/assets/pozitiv-logo.png.asset.json";
+import { createFileRoute, Link } from "@tanstack/react-router";
 import heroSet from "@/assets/hero-set.jpg";
+import { Footer } from "@/components/Footer";
+import { FounderCard } from "@/components/FounderCard";
+import { Header } from "@/components/Header";
+import { ProjectCard } from "@/components/ProjectCard";
+import { SectionLabel } from "@/components/SectionLabel";
+import { projects, statusLabels, statusOrder } from "@/content/projects";
+import { company, copy, founders } from "@/content/site";
+import { useLang } from "@/lib/language";
 
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Pozitiv Films — Boutique Film Production in Prague" },
+      { title: "Pozitiv Films — butiková filmová produkce, Praha" },
       {
         name: "description",
         content:
-          "A small Prague-based film crew making documentaries, commercials and brand films. Honest stories, told simply.",
+          "Butiková produkční společnost z Prahy. Dokumentární a hrané filmy — dokončené projekty, projekty ve výrobě a ve vývoji.",
       },
-      { property: "og:title", content: "Pozitiv Films — Boutique Film Production" },
+      { property: "og:title", content: "Pozitiv Films — butiková filmová produkce" },
       {
         property: "og:description",
-        content:
-          "A small Prague-based film crew making documentaries, commercials and brand films.",
+        content: "Dokumentární a hrané filmy z Prahy. Malý štáb, skutečné příběhy.",
       },
+      { property: "og:url", content: "/" },
     ],
+    links: [{ rel: "canonical", href: "/" }],
   }),
-  component: Index,
+  component: Home,
 });
 
-const services = [
-  {
-    title: "Documentary",
-    text: "Long-form and short documentary work. We spend time with people before the camera comes out.",
-  },
-  {
-    title: "Commercial",
-    text: "Brand films, product spots and campaign content — from concept and script to final grade.",
-  },
-  {
-    title: "Production service",
-    text: "Local crew, locations and logistics in Prague and across the Czech Republic for visiting teams.",
-  },
-];
+function Home() {
+  const { lang } = useLang();
 
-const work = [
-  { title: "Mistrovi", meta: "Documentary short · 2025" },
-  { title: "Ranní směna", meta: "Brand film · 2025" },
-  { title: "Kolotoč", meta: "Commercial · 2024" },
-  { title: "Tichá voda", meta: "Documentary · 2024" },
-];
-
-function Index() {
   return (
     <div className="min-h-screen bg-background">
-      <header className="border-b border-border">
-        <div className="mx-auto grid max-w-5xl grid-cols-[minmax(0,1fr)_auto] items-center gap-4 px-6 py-5 sm:flex sm:justify-between">
-          <a href="#top" className="flex min-w-0 items-center">
-            <img
-              src={logo.url}
-              alt="Pozitiv Films"
-              width={182}
-              height={93}
-              className="h-10 w-auto"
-            />
-          </a>
-          <nav className="flex shrink-0 items-center gap-6 font-[family-name:var(--font-display)] text-sm">
-            <a href="#work" className="transition-colors hover:text-primary">
-              Work
-            </a>
-            <a href="#about" className="transition-colors hover:text-primary">
-              About
-            </a>
-            <a href="#contact" className="transition-colors hover:text-primary">
-              Contact
-            </a>
-          </nav>
-        </div>
-      </header>
-
-      <main id="top">
+      <Header />
+      <main>
         <section className="mx-auto max-w-5xl px-6 pt-16 pb-12 sm:pt-24">
           <h1 className="max-w-2xl text-4xl leading-[1.1] sm:text-6xl">
-            Small crew.
+            {copy.heroLine1[lang]}
             <br />
-            <span className="text-primary">Real stories.</span>
+            <span className="text-primary">{copy.heroLine2[lang]}</span>
           </h1>
           <p className="mt-6 max-w-xl text-base leading-relaxed text-muted-foreground">
-            Pozitiv Films is a boutique production company based in Prague. We make
-            documentaries, brand films and commercials — with a crew small enough to keep
-            things human and experienced enough to get it done.
+            {copy.heroText[lang]}
           </p>
-          <div className="mt-8 flex flex-wrap items-center gap-4">
-            <a
-              href="#contact"
+          <div className="mt-8 flex flex-wrap items-center gap-6">
+            <Link
+              to="/projects"
               className="bg-primary px-6 py-3 font-[family-name:var(--font-display)] text-sm font-semibold text-primary-foreground transition-opacity hover:opacity-90"
             >
-              Start a project
-            </a>
+              {copy.allProjects[lang]}
+            </Link>
             <a
-              href="#work"
-              className="font-[family-name:var(--font-display)] text-sm font-semibold text-foreground underline decoration-primary decoration-2 underline-offset-4"
+              href="#contact"
+              className="font-[family-name:var(--font-display)] text-sm font-semibold underline decoration-primary decoration-2 underline-offset-4"
             >
-              See our work
+              {copy.contactTag[lang]}
             </a>
           </div>
         </section>
@@ -103,109 +65,105 @@ function Index() {
         <section className="mx-auto max-w-5xl px-6">
           <img
             src={heroSet}
-            alt="Cinematographer filming an interview in natural window light"
+            alt={copy.heroAlt[lang]}
             width={1600}
             height={1008}
             className="w-full object-cover"
           />
         </section>
 
-        <section id="about" className="mx-auto max-w-5xl px-6 py-16 sm:py-24">
-          <span className="brand-tag text-xs tracking-wide uppercase">About us</span>
+        <section className="mx-auto max-w-5xl px-6 py-16 sm:py-24">
+          <SectionLabel>{copy.aboutTag[lang]}</SectionLabel>
           <div className="mt-8 grid gap-10 md:grid-cols-[1fr_1.2fr]">
-            <h2 className="text-2xl sm:text-3xl">
-              We keep the team small on purpose.
-            </h2>
+            <h2 className="text-2xl sm:text-3xl">{copy.aboutHeading[lang]}</h2>
             <div className="space-y-4 text-muted-foreground leading-relaxed">
-              <p>
-                Two producers, a cinematographer and an editor — plus the people we trust
-                and have worked with for years. That means fewer meetings, direct answers
-                and one person who knows your project from the first call to delivery.
-              </p>
-              <p>
-                We shoot on location most of the time, work in Czech and English, and are
-                happy to start from a rough idea rather than a finished brief.
-              </p>
+              {copy.aboutParagraphs.slice(0, 2).map((p) => (
+                <p key={p.en}>{p[lang]}</p>
+              ))}
+              <Link
+                to="/about"
+                className="inline-block font-[family-name:var(--font-display)] text-sm font-semibold text-foreground underline decoration-primary decoration-2 underline-offset-4"
+              >
+                {copy.aboutLink[lang]}
+              </Link>
             </div>
           </div>
         </section>
 
         <section className="border-y border-border bg-secondary">
           <div className="mx-auto max-w-5xl px-6 py-16 sm:py-20">
-            <span className="brand-tag text-xs tracking-wide uppercase">What we do</span>
-            <div className="mt-8 grid gap-8 sm:grid-cols-3">
-              {services.map((s) => (
-                <div key={s.title} className="border-t-2 border-primary pt-4">
-                  <h3 className="text-lg">{s.title}</h3>
-                  <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
-                    {s.text}
-                  </p>
+            <SectionLabel>{copy.projectsTag[lang]}</SectionLabel>
+            <h2 className="mt-6 text-2xl sm:text-3xl">{copy.projectsHeading[lang]}</h2>
+            <div className="mt-10 space-y-12">
+              {statusOrder.map((status) => (
+                <div key={status}>
+                  <h3 className="border-t-2 border-primary pt-3 font-[family-name:var(--font-display)] text-sm tracking-wide uppercase">
+                    {statusLabels[status][lang]}
+                  </h3>
+                  <div className="mt-6 grid gap-8 sm:grid-cols-2">
+                    {projects
+                      .filter((p) => p.status === status)
+                      .map((p) => (
+                        <ProjectCard key={p.slug} project={p} />
+                      ))}
+                  </div>
                 </div>
               ))}
             </div>
           </div>
         </section>
 
-        <section id="work" className="mx-auto max-w-5xl px-6 py-16 sm:py-24">
-          <span className="brand-tag text-xs tracking-wide uppercase">Selected work</span>
-          <ul className="mt-8 divide-y divide-border border-t border-border">
-            {work.map((w) => (
-              <li
-                key={w.title}
-                className="grid grid-cols-[minmax(0,1fr)_auto] items-baseline gap-4 py-5"
-              >
-                <span className="truncate font-[family-name:var(--font-display)] text-lg font-semibold">
-                  {w.title}
-                </span>
-                <span className="shrink-0 text-xs text-muted-foreground sm:text-sm">
-                  {w.meta}
-                </span>
-              </li>
+        <section className="mx-auto max-w-5xl px-6 py-16 sm:py-24">
+          <SectionLabel>{copy.foundersTag[lang]}</SectionLabel>
+          <h2 className="mt-6 text-2xl sm:text-3xl">{copy.foundersHeading[lang]}</h2>
+          <div className="mt-8 grid max-w-lg gap-8 sm:grid-cols-2">
+            {founders.map((f) => (
+              <FounderCard key={f.name} founder={f} />
             ))}
-          </ul>
-          <p className="mt-6 text-sm text-muted-foreground">
-            Full reel available on request.
-          </p>
+          </div>
+          <Link
+            to="/about"
+            className="mt-8 inline-block font-[family-name:var(--font-display)] text-sm font-semibold underline decoration-primary decoration-2 underline-offset-4"
+          >
+            {copy.aboutLink[lang]}
+          </Link>
         </section>
 
         <section id="contact" className="bg-ink text-ink-foreground">
           <div className="mx-auto grid max-w-5xl gap-10 px-6 py-16 sm:py-20 md:grid-cols-2">
             <div>
-              <h2 className="text-2xl sm:text-3xl">Let's talk about it.</h2>
+              <h2 className="text-2xl sm:text-3xl">{copy.contactHeading[lang]}</h2>
               <p className="mt-4 max-w-md text-sm leading-relaxed opacity-80">
-                Tell us roughly what you have in mind — budget range and timing help. We
-                usually reply within a day.
+                {copy.contactText[lang]}
               </p>
             </div>
             <dl className="space-y-4 font-[family-name:var(--font-display)] text-sm">
               <div>
-                <dt className="opacity-60">Email</dt>
+                <dt className="opacity-60">{copy.labelEmail[lang]}</dt>
                 <dd>
-                  <a className="underline decoration-primary-light decoration-2 underline-offset-4" href="mailto:info@pozitiv-films.cz">
-                    info@pozitiv-films.cz
+                  <a
+                    href={`mailto:${company.email}`}
+                    className="underline decoration-primary-light decoration-2 underline-offset-4"
+                  >
+                    {company.email}
                   </a>
                 </dd>
               </div>
               <div>
-                <dt className="opacity-60">Phone</dt>
+                <dt className="opacity-60">{copy.labelPhone[lang]}</dt>
                 <dd>
-                  <a className="hover:opacity-80" href="tel:+420000000000">
-                    +420 000 000 000
-                  </a>
+                  <a href={`tel:${company.phone.replace(/\s/g, "")}`}>{company.phone}</a>
                 </dd>
               </div>
               <div>
-                <dt className="opacity-60">Studio</dt>
-                <dd className="opacity-90">Praha 3, Czech Republic</dd>
+                <dt className="opacity-60">{copy.labelStudio[lang]}</dt>
+                <dd className="opacity-90">{company.address[lang]}</dd>
               </div>
             </dl>
           </div>
         </section>
       </main>
-
-      <footer className="mx-auto max-w-5xl px-6 py-8 text-xs text-muted-foreground">
-        © {new Date().getFullYear()} Pozitiv Films s.r.o.
-      </footer>
+      <Footer />
     </div>
   );
 }
