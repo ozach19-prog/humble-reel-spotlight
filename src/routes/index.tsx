@@ -166,10 +166,24 @@ function Home() {
                 </dd>
               </div>
               <div>
+                <dt className="opacity-60">{copy.labelInstagram[lang]}</dt>
+                <dd>
+                  <a
+                    href={company.instagramUrl}
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    className="underline decoration-primary-light decoration-2 underline-offset-4"
+                  >
+                    {company.instagramHandle}
+                  </a>
+                </dd>
+              </div>
+              <div>
                 <dt className="opacity-60">{copy.labelStudio[lang]}</dt>
                 <dd className="opacity-90">{company.address[lang]}</dd>
               </div>
             </dl>
+
           </div>
         </section>
       </main>
