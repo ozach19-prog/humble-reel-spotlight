@@ -134,12 +134,34 @@ function ProjectDetail() {
                     key={c.role.en + c.name}
                     className="flex justify-between gap-4 border-b border-border pb-2"
                   >
-                    <dt className="text-muted-foreground">{c.role[lang]}</dt>
-                    <dd>{c.name}</dd>
+                    <dt className="shrink-0 text-muted-foreground">{c.role[lang]}</dt>
+                    <dd className="text-right">{c.name}</dd>
                   </div>
                 ))}
               </dl>
             </div>
+            {project.externalLinks && project.externalLinks.length > 0 && (
+              <div>
+                <h2 className="font-[family-name:var(--font-display)] text-sm tracking-wide uppercase">
+                  {lang === "cs" ? "Odkazy" : "Links"}
+                </h2>
+                <ul className="mt-4 space-y-2 text-sm">
+                  {project.externalLinks.map((l) => (
+                    <li key={l.url}>
+                      <a
+                        href={l.url}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="underline decoration-primary decoration-2 underline-offset-4 transition-colors hover:text-primary"
+                      >
+                        {l.label[lang]}
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
+
           </div>
         </div>
       </main>
