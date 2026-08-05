@@ -56,18 +56,19 @@ export const copy = {
   },
   aboutParagraphs: [
     {
-      cs: "Společnost jsme založili v roce 2019 po deseti letech práce na cizích projektech. Chtěli jsme dělat méně filmů a být u nich déle.",
-      en: "We founded the company in 2019 after ten years of working on other people's projects. We wanted to make fewer films and stay with them longer.",
+      cs: "Pozitiv Films je butiková produkční společnost se sídlem v Praze. Vedou ji dva producenti a okruh spolupracovníků, se kterými se známe z předchozích projektů.",
+      en: "Pozitiv Films is a boutique production company based in Prague. It is run by two producers and a circle of collaborators we know from previous projects.",
     },
     {
-      cs: "Jsme dva zakladatelé a okruh spolupracovníků, které známe roky. U každého projektu je jeden z nás od prvního telefonátu po dodání.",
-      en: "There are two of us, plus a circle of collaborators we have known for years. On every project one of us is there from the first phone call to delivery.",
+      cs: "Děláme méně titulů a jsme u nich delší dobu — od prvního nápadu a vývoje látky až po dodání. U každého projektu je jeden z producentů od začátku do konce.",
+      en: "We make fewer titles and stay with them longer — from the first idea and script development all the way to delivery. On every project one of the producers is there from beginning to end.",
     },
     {
-      cs: "Pracujeme v češtině i angličtině, většinu času v reálných lokacích, a nebráníme se tomu začít od hrubé myšlenky místo hotového zadání.",
-      en: "We work in Czech and English, mostly on real locations, and we're happy to start from a rough idea rather than a finished brief.",
+      cs: "Pracujeme v češtině i angličtině, na hraných sériích i celovečerních filmech, a nebráníme se tomu začít od hrubé myšlenky místo hotového zadání.",
+      en: "We work in Czech and English, on scripted series as well as feature films, and we're happy to start from a rough idea rather than a finished brief.",
     },
   ],
+
   aboutLink: { cs: "Více o nás", en: "More about us" },
   projectsTag: { cs: "Projekty", en: "Projects" },
   projectsHeading: { cs: "Na čem pracujeme", en: "What we're working on" },
