@@ -198,37 +198,41 @@ export const projects: Project[] = [
     },
   },
   {
-    slug: "ticha-voda",
-    title: "Tichá voda",
+    slug: "mlada-krev-ii",
+    title: "Mladá krev II",
     status: "production",
     year: "2026",
-    format: { cs: "Hraný film", en: "Fiction feature" },
-    length: { cs: "cca 95 min", en: "approx. 95 min" },
+    format: { cs: "Kriminální série", en: "Crime series" },
+    length: { cs: "13 × 55 min", en: "13 × 55 min" },
     logline: {
-      cs: "Plavčice na malém městském bazénu se stane nechtěným svědkem něčeho, co by radši neviděla.",
-      en: "A lifeguard at a small municipal pool becomes the unwilling witness to something she would rather not have seen.",
+      cs: "Druhá řada Mladé krve. Mladí kriminalisté už nejsou nováčci — a případy, které přicházejí, jsou osobnější než kdy dřív.",
+      en: "The second season of Young Blood. The young detectives are no longer rookies — and the cases coming their way are more personal than ever.",
     },
     synopsis: [
       {
-        cs: "První celovečerní hraný film společnosti. Komorní drama o mlčení a odpovědnosti, odehrávající se téměř výhradně v jedné budově.",
-        en: "The company's first fiction feature. A chamber drama about silence and responsibility, set almost entirely inside one building.",
+        cs: "Pokračování kriminální série o generačním střetu na regionálním oddělení vražd. Vyšetřovatelé, kteří v první řadě teprve hledali své místo, teď nesou vlastní odpovědnost — a s ní i chyby, které se nedají svést na někoho jiného.",
+        en: "The continuation of the crime series about a generational clash inside a regional homicide unit. The investigators who were still finding their place in season one now carry responsibility of their own — and with it, mistakes they cannot pin on anyone else.",
       },
       {
-        cs: "Natáčení probíhá, dokončení plánováno na rok 2026.",
-        en: "Currently shooting, with delivery planned for 2026.",
+        cs: "Natáčení 2026, televizní premiéra se připravuje.",
+        en: "Shooting in 2026, TV premiere in preparation.",
       },
     ],
     credits: [
-      { role: roles.director, name: "Martin Hruška" },
-      { role: roles.dop, name: "Jan Beneš" },
-      { role: roles.producer, name: "Tereza Malá" },
+      { role: roles.writer, name: "Alice Nellis" },
+      { role: roles.director, name: "Alice Nellis" },
+      {
+        role: roles.producer,
+        name: "Klára Bukovská, Ondřej Zach (Pozitiv Films s.r.o.)",
+      },
     ],
-    still: project4,
+    still: mladaKrev2Still.url,
     stillAlt: {
-      cs: "Žena v bazénové hale za ranního světla",
-      en: "A woman in a swimming pool hall in morning light",
+      cs: "Kriminalista míří zbraní v průmyslové hale",
+      en: "A detective aims his gun inside an industrial hall",
     },
   },
+
   {
     slug: "ctyrhra",
     title: "Čtyřhra",
