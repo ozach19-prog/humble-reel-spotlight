@@ -15,5 +15,5 @@ export default defineMcp({
     listProjectsTool,
     getProjectTool,
     listFoundersTool,
-  ] as McpDefinitionInput["tools"],
+  ] as unknown as McpDefinitionInput["tools"],
 });

@@ -1,3 +1,5 @@
+# Im now attaching a pdf presentation of one completed project. use information from it to fill in the first of the projects in "dokončené projekty" (instead of the placeholder "Mistrovi")
+
 # Replace placeholder content with the Canva deck
 
 Waiting on one upload: the Canva presentation exported as **PDF (Share → Download → PDF Print)**. English text only; images will be extracted from the PDF itself.
