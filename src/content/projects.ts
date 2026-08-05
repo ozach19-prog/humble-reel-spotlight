@@ -1,8 +1,8 @@
 import nahradniciStill from "@/assets/nahradnici-still.jpg.asset.json";
 import project2 from "@/assets/project-2.jpg";
-import project3 from "@/assets/project-3.jpg";
 import project4 from "@/assets/project-4.jpg";
 import ctyrhraStill from "@/assets/ctyrhra-still.png.asset.json";
+import marikaStill from "@/assets/marika-still.jpg.asset.json";
 
 export type ProjectStatus = "produced" | "production" | "development";
 
@@ -35,6 +35,7 @@ const roles = {
   designer: { cs: "Architekt", en: "Production designer" },
   costume: { cs: "Kostýmy", en: "Costume designer" },
   sound: { cs: "Zvuk", en: "Sound" },
+  casting: { cs: "Casting", en: "Casting" },
 } as const;
 
 export const projects: Project[] = [
@@ -128,35 +129,55 @@ export const projects: Project[] = [
     },
   },
   {
-    slug: "kolotoc",
-    title: "Kolotoč",
+    slug: "marika",
+    title: "Marika",
     status: "production",
-    year: "2026",
-    format: { cs: "Dokument", en: "Documentary" },
-    length: { cs: "cca 85 min", en: "approx. 85 min" },
+    year: "2027",
+    format: { cs: "Venkovský thriller", en: "Rural thriller" },
+    length: { cs: "8 × 55 min", en: "8 × 55 min" },
     logline: {
-      cs: "Dvě sedmnáctileté kamarádky se rozhodují, jestli po prázdninách zůstanou v pohraničním městě.",
-      en: "Two seventeen-year-old friends decide whether to stay in their border town after the summer.",
+      cs: "Co uděláte s mrtvolou v garáži, když k vám přes plot koukají sousedi? A co uděláte se svým svědomím?",
+      en: "What do you do with a dead body in your garage when the neighbours are peering over the fence? And what do you do with your conscience?",
     },
     synopsis: [
       {
-        cs: "Sledujeme jedno léto, poslední před rozhodnutím. Film vzniká metodou dlouhého pozorování — natáčíme od jara 2025.",
-        en: "One summer, the last one before the decision. Made through long observation — we have been filming since spring 2025.",
+        cs: "Marika Vrbická (45) je běžná venkovská žena — má dům, zahradu, manžela, dospívající dceru, sousedy a kamarádky. A také žárlivý pocit, že by o to všechno mohla přijít, kdyby se její muž Hynek začal poohlížet po jiné. Aby znemožnila případnou nevěru, nadopuje ho před odjezdem na abiturientský večírek prášky na spaní. Tím spustí řetěz událostí, po nichž mají Vrbičtí v garáži v kufru auta mrtvolu manželky místního mafiána.",
+        en: "Marika Vrbická (45) is an ordinary woman in an ordinary village — a house, a garden, a husband, a teenage daughter, neighbours and friends. And a jealous fear that she could lose it all if her husband Hynek starts looking elsewhere. To rule out any infidelity before he leaves for his school reunion, she doses him with sleeping pills. That sets off a chain of events which leaves the Vrbickýs with the body of the local mobster's wife in the boot of a car in their garage.",
       },
       {
-        cs: "Ve výrobě. Hrubý střih plánujeme na podzim, dokončení v roce 2026.",
-        en: "In production. Rough cut planned for autumn, delivery in 2026.",
+        cs: "Hynek totiž vezme naordinovaný štrůdl na večírek s sebou a podělí se o něj s bývalou spolužačkou Romanou, dnes manželkou místního realitního šíbra. Když ji pak veze domů, ve sněhové vánici havaruje. Marika je najde v bezvědomí, Romanu považuje za mrtvou a ze strachu z odhalení svého triku přesvědčí omámeného Hynka, že nehodu zavinil v opilosti a nesmí ji hlásit policii. Tělo naloží do kufru a nabourané auto skryjí v garáži.",
+        en: "Hynek takes the doctored apple strudel to the reunion and shares it with his former classmate Romana, now the wife of the local real-estate crook. Driving her home, he crashes in a snowstorm. Marika finds them unconscious, believes Romana is dead, and — terrified her trick will come to light — convinces the groggy Hynek that he caused the crash while drunk and must not call the police. Together they load the body into the boot and hide the wrecked car in the garage.",
+      },
+      {
+        cs: "Romana se však v noci v kufru probere. Marika, sama pod vlivem prášků, se ji rozhodne odvézt do nemocnice, nastartuje — a usne. Výfukové plyny dokonají dílo. Ráno má Marika v garáži skutečnou mrtvolu a Hynka, který věří, že ji zabil on. Mezitím mafián hledá ženu u ruské konkurence, případ začíná vyšetřovat svérázná dvojice policistů, otec a syn Barošovi, domů na víkend přijíždí sedmnáctiletá dcera Julie a přes plot nakukuje zvídavá sousedka Hana.",
+        en: "But Romana wakes up in the boot during the night. Marika, herself under the influence of the pills, decides to drive her to hospital, starts the engine — and falls asleep. The exhaust fumes finish the job. By morning she really does have a corpse in the garage, and a husband convinced he killed her. Meanwhile the mobster hunts for his wife among his Russian rivals, an eccentric father-and-son police duo, the Barošes, take on the case, seventeen-year-old daughter Julie arrives home for the weekend, and the inquisitive neighbour Hana keeps peering over the fence.",
+      },
+      {
+        cs: "Kombinace kriminální zápletky s lehce komickým tónem připomíná Fargo, téma rodiny, jíž se vnější ohrožení stane katalyzátorem domácích vztahů, zase Ozark. Původní zločin, spáchaný vlastně z malichernosti, zatahuje obyčejný manželský pár do stále spletitější sítě lží, manipulací a dalších trestných činů — a boží mlýny melou pomalu, ale najisto.",
+        en: "The crime plot with its lightly comic tone recalls Fargo, while the theme of a family for whom an outside threat becomes the catalyst of its own domestic reckoning echoes Ozark. An original crime, committed out of sheer pettiness, pulls an ordinary married couple into an ever more tangled web of lies, manipulation and further offences — and the mills of God grind slowly, but they grind sure.",
+      },
+      {
+        cs: "Preprodukce jaro–léto 2026, natáčení září–prosinec 2026, postprodukce a zimní dotáčky leden–březen 2027, televizní premiéra na jaře 2027.",
+        en: "Preproduction spring–summer 2026, shooting September–December 2026, postproduction and winter pick-ups January–March 2027, TV premiere in spring 2027.",
       },
     ],
     credits: [
-      { role: roles.director, name: "Tereza Malá" },
-      { role: roles.dop, name: "Klára Šimková" },
-      { role: roles.producer, name: "Martin Hruška" },
+      { role: roles.writer, name: "Alice Nellis" },
+      { role: roles.director, name: "Alice Nellis, Pavel Soukup / Michal Blaško" },
+      { role: roles.dop, name: "Matěj Cibulka" },
+      { role: roles.designer, name: "Jan Vlasák" },
+      { role: roles.costume, name: "Katarína Hollá" },
+      { role: roles.editor, name: "Filip Issa" },
+      { role: roles.casting, name: "Madla Zachariášová, Jam Casting" },
+      {
+        role: roles.producer,
+        name: "Klára Bukovská, Ondřej Zach (Pozitiv Films s.r.o.)",
+      },
     ],
-    still: project3,
+    still: marikaStill.url,
     stillAlt: {
-      cs: "Dva mladí lidé sedící na nábřeží za soumraku",
-      en: "Two young people sitting on a riverbank at dusk",
+      cs: "Osvětlená garáž venkovského domu v zimní noci",
+      en: "A lit garage of a village house on a winter night",
     },
   },
   {
