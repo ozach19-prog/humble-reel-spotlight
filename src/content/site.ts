@@ -103,37 +103,48 @@ export const copy = {
 
 export const founders = [
   {
-    name: "Martin Hruška",
-    role: { cs: "Producent, režisér", en: "Producer, director" },
+    name: "Klára Bukovská",
+    role: { cs: "Producentka", en: "Producer" },
     photo: founder1,
-    email: "martin@pozitiv-films.cz",
+    email: "klarabuk@gmail.com",
     bio: [
       {
-        cs: "Martin začínal jako asistent produkce u televizních dokumentů a od roku 2012 produkuje samostatně. Vede u nás výrobu, financování a koprodukční jednání.",
-        en: "Martin started as a production assistant on television documentaries and has been producing independently since 2012. He runs production, financing and co-production talks.",
+        cs: "Klára je spoluzakladatelkou Pozitiv Films. Vede vývoj látek a spolupráci s autory a režiséry — od prvního nápadu přes scénář až po nastavení projektu s koprodukčními partnery a televizí.",
+        en: "Klára is a co-founder of Pozitiv Films. She leads development and the work with writers and directors — from the first idea through the script to setting the project up with co-production partners and broadcasters.",
       },
       {
-        cs: "Zajímá ho hraný film s dokumentární metodou — malý štáb, reálné lokace, dlouhá příprava.",
-        en: "He is drawn to fiction made with documentary methods — a small crew, real locations, long preparation.",
+        cs: "(Placeholder text — pošlete prosím vlastní znění bio, rád ho vyměním.)",
+        en: "(Placeholder text — send your own wording and I'll replace it.)",
       },
     ],
-    credits: ["Ranní směna (2024)", "Tichá voda (ve výrobě)", "Náhradníci (2024)"],
+    credits: [
+      "Mladá krev (2025)",
+      "Náhradníci (2024)",
+      "Marika (ve výrobě)",
+      "Čtyřhra (ve vývoji)",
+    ],
   },
   {
-    name: "Tereza Malá",
-    role: { cs: "Režisérka, dramaturgyně", en: "Director, script editor" },
+    name: "Ondřej Zach",
+    role: { cs: "Producent", en: "Producer" },
     photo: founder2,
-    email: "tereza@pozitiv-films.cz",
+    email: "ondrej.zach@ozet.eu",
     bio: [
       {
-        cs: "Tereza vystudovala dokumentární tvorbu a natočila několik krátkých filmů, které běžely na domácích i zahraničních festivalech. U nás vede vývoj látek a dramaturgii.",
-        en: "Tereza studied documentary filmmaking and has directed several shorts that played at domestic and international festivals. She leads development and script editing.",
+        cs: "Ondřej je spoluzakladatelem Pozitiv Films. Má na starosti výrobu a financování — rozpočty, harmonogramy, štáby a dodání projektů.",
+        en: "Ondřej is a co-founder of Pozitiv Films. He is responsible for production and financing — budgets, schedules, crews and delivery.",
       },
       {
-        cs: "Pracuje pozorovací metodou: než se rozsvítí kamera, tráví s lidmi měsíce.",
-        en: "She works observationally: months with people before the camera is switched on.",
+        cs: "(Placeholder text — pošlete prosím vlastní znění bio, rád ho vyměním.)",
+        en: "(Placeholder text — send your own wording and I'll replace it.)",
       },
     ],
-    credits: ["Náhradníci (2024)", "Kolotoč (ve výrobě)", "Pole (ve vývoji)"],
+    credits: [
+      "Mladá krev (2025)",
+      "Mladá krev II (ve výrobě)",
+      "Marika (ve výrobě)",
+      "Čtyřhra (ve vývoji)",
+    ],
   },
 ];
+
