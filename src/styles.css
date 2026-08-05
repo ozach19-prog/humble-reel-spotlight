@@ -154,5 +154,28 @@
   body {
     background-color: var(--color-background);
     color: var(--color-foreground);
+    font-family: var(--font-body);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: var(--font-display);
+    font-weight: 600;
+    letter-spacing: -0.01em;
   }
 }
+
+/* Brand device: the angled blue tag used throughout the graphic manual */
+@utility brand-tag {
+  display: inline-block;
+  background-color: var(--primary-light);
+  color: var(--ink);
+  font-family: var(--font-display);
+  font-weight: 600;
+  padding: 0.3rem 1.6rem 0.3rem 0.9rem;
+  clip-path: polygon(0 0, 100% 0, calc(100% - 0.9rem) 100%, 0 100%);
+}
+
