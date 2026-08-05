@@ -86,7 +86,7 @@
           "properties": {
             "slug": {
               "type": "string",
-              "description": "Project slug. One of: mistrovi, rani-smena, kolotoc, ticha-voda, pole."
+              "description": "Project slug. One of: nahradnici, rani-smena, kolotoc, ticha-voda, pole."
             },
             "language": {
               "description": "Language for descriptive fields. Defaults to en.",
