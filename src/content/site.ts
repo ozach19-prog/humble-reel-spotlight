@@ -8,7 +8,10 @@ export const company = {
   email: "info@pozitiv-films.cz",
   phone: "+420 000 000 000",
   address: { cs: "Praha 3, Česká republika", en: "Prague 3, Czech Republic" },
+  instagramHandle: "@pozitivfilms",
+  instagramUrl: "https://www.instagram.com/pozitivfilms/",
 };
+
 
 export const nav: { to: string; label: Bi }[] = [
   { to: "/projects", label: { cs: "Projekty", en: "Projects" } },
@@ -60,6 +63,8 @@ export const copy = {
   labelEmail: { cs: "E-mail", en: "Email" },
   labelPhone: { cs: "Telefon", en: "Phone" },
   labelStudio: { cs: "Studio", en: "Studio" },
+  labelInstagram: { cs: "Instagram", en: "Instagram" },
+
   backToProjects: { cs: "Zpět na projekty", en: "Back to projects" },
   logline: { cs: "Logline", en: "Logline" },
   synopsis: { cs: "Synopse", en: "Synopsis" },

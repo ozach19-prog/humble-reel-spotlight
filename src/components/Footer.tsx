@@ -15,10 +15,20 @@ export function Footer() {
             {company.email}
           </a>
           {" · "}
+          <a
+            href={company.instagramUrl}
+            target="_blank"
+            rel="noreferrer noopener"
+            className="hover:text-primary"
+          >
+            Instagram
+          </a>
+          {" · "}
           {company.address[lang]}
           {" · "}
           {copy.labelPhone[lang]}: {company.phone}
         </p>
+
       </div>
     </footer>
   );
