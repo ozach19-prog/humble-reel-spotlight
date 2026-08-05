@@ -32,6 +32,9 @@ const roles = {
   broadcaster: { cs: "Premiéra", en: "Premiere" },
   award: { cs: "Ocenění", en: "Award" },
   cast: { cs: "Hrají", en: "Cast" },
+  designer: { cs: "Architekt", en: "Production designer" },
+  costume: { cs: "Kostýmy", en: "Costume designer" },
+  sound: { cs: "Zvuk", en: "Sound" },
 } as const;
 
 export const projects: Project[] = [
