@@ -147,42 +147,62 @@ function Home() {
                 {copy.contactText[lang]}
               </p>
             </div>
-            <dl className="space-y-4 font-[family-name:var(--font-display)] text-sm">
-              <div>
-                <dt className="opacity-60">{copy.labelEmail[lang]}</dt>
-                <dd>
-                  <a
-                    href={`mailto:${company.email}`}
-                    className="underline decoration-primary-light decoration-2 underline-offset-4"
-                  >
-                    {company.email}
-                  </a>
-                </dd>
+            <div className="space-y-8 font-[family-name:var(--font-display)] text-sm">
+              <div className="grid gap-8 sm:grid-cols-2">
+                {company.contacts.map((person) => (
+                  <div key={person.email}>
+                    <p className="font-semibold">{person.name}</p>
+                    <p className="opacity-60">{person.role[lang]}</p>
+                    <p className="mt-2">
+                      <a
+                        href={`mailto:${person.email}`}
+                        className="underline decoration-primary-light decoration-2 underline-offset-4"
+                      >
+                        {person.email}
+                      </a>
+                    </p>
+                    <p className="mt-1">
+                      <a href={`tel:${person.phone.replace(/\s/g, "")}`}>{person.phone}</a>
+                    </p>
+                  </div>
+                ))}
               </div>
-              <div>
-                <dt className="opacity-60">{copy.labelPhone[lang]}</dt>
-                <dd>
-                  <a href={`tel:${company.phone.replace(/\s/g, "")}`}>{company.phone}</a>
-                </dd>
-              </div>
-              <div>
-                <dt className="opacity-60">{copy.labelInstagram[lang]}</dt>
-                <dd>
-                  <a
-                    href={company.instagramUrl}
-                    target="_blank"
-                    rel="noreferrer noopener"
-                    className="underline decoration-primary-light decoration-2 underline-offset-4"
-                  >
-                    {company.instagramHandle}
-                  </a>
-                </dd>
-              </div>
-              <div>
-                <dt className="opacity-60">{copy.labelStudio[lang]}</dt>
-                <dd className="opacity-90">{company.address[lang]}</dd>
-              </div>
-            </dl>
+              <dl className="space-y-4">
+                <div>
+                  <dt className="opacity-60">{copy.labelStudio[lang]}</dt>
+                  <dd className="opacity-90">
+                    {company.legalName}, {company.address[lang]}
+                  </dd>
+                </div>
+                <div>
+                  <dt className="opacity-60">{copy.labelWeb[lang]}</dt>
+                  <dd>
+                    <a
+                      href={`https://${company.website}`}
+                      target="_blank"
+                      rel="noreferrer noopener"
+                      className="underline decoration-primary-light decoration-2 underline-offset-4"
+                    >
+                      {company.website}
+                    </a>
+                  </dd>
+                </div>
+                <div>
+                  <dt className="opacity-60">{copy.labelInstagram[lang]}</dt>
+                  <dd>
+                    <a
+                      href={company.instagramUrl}
+                      target="_blank"
+                      rel="noreferrer noopener"
+                      className="underline decoration-primary-light decoration-2 underline-offset-4"
+                    >
+                      {company.instagramHandle}
+                    </a>
+                  </dd>
+                </div>
+              </dl>
+            </div>
+
 
           </div>
         </section>

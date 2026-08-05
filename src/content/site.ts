@@ -5,18 +5,38 @@ type Bi = { cs: string; en: string };
 
 export const company = {
   legalName: "Pozitiv Films s.r.o.",
-  email: "info@pozitiv-films.cz",
-  phone: "+420 000 000 000",
-  address: { cs: "Praha 3, Česká republika", en: "Prague 3, Czech Republic" },
+  email: "klarabuk@gmail.com",
+  phone: "+420 603 252 565",
+  website: "www.pozitiv-films.cz",
+  address: {
+    cs: "Olšanská 3, Praha 3, 130 00, Česká republika",
+    en: "Olšanská 3, Prague 3, 130 00, Czech Republic",
+  },
   instagramHandle: "@pozitivfilms",
   instagramUrl: "https://www.instagram.com/pozitivfilms/",
+  contacts: [
+    {
+      name: "Klára Bukovská",
+      role: { cs: "Producentka", en: "Producer" },
+      email: "klarabuk@gmail.com",
+      phone: "+420 603 252 565",
+    },
+    {
+      name: "Ondřej Zach",
+      role: { cs: "Producent", en: "Producer" },
+      email: "ondrej.zach@ozet.eu",
+      phone: "+420 724 004 747",
+    },
+  ],
 };
 
 
-export const nav: { to: string; label: Bi }[] = [
+export const nav: { to: string; hash?: string; label: Bi }[] = [
   { to: "/projects", label: { cs: "Projekty", en: "Projects" } },
   { to: "/about", label: { cs: "O nás", en: "About" } },
+  { to: "/", hash: "contact", label: { cs: "Kontakt", en: "Contact" } },
 ];
+
 
 export const copy = {
   heroLine1: { cs: "Malý štáb.", en: "Small crew." },
@@ -64,6 +84,8 @@ export const copy = {
   labelPhone: { cs: "Telefon", en: "Phone" },
   labelStudio: { cs: "Studio", en: "Studio" },
   labelInstagram: { cs: "Instagram", en: "Instagram" },
+  labelWeb: { cs: "Web", en: "Web" },
+
 
   backToProjects: { cs: "Zpět na projekty", en: "Back to projects" },
   logline: { cs: "Logline", en: "Logline" },
