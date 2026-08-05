@@ -7,7 +7,7 @@ import { projects, statusLabels, statusOrder } from "@/content/projects";
 import { copy } from "@/content/site";
 import { useLang } from "@/lib/language";
 
-export const Route = createFileRoute("/projects")({
+export const Route = createFileRoute("/projects/")({
   head: () => ({
     meta: [
       { title: "Projekty — Pozitiv Films" },
