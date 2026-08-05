@@ -1,5 +1,5 @@
 import nahradniciStill from "@/assets/nahradnici-still.jpg.asset.json";
-import project2 from "@/assets/project-2.jpg";
+import mladaKrevStill from "@/assets/mlada-krev-still.webp.asset.json";
 import project4 from "@/assets/project-4.jpg";
 import ctyrhraStill from "@/assets/ctyrhra-still.png.asset.json";
 import marikaStill from "@/assets/marika-still.jpg.asset.json";
@@ -97,37 +97,54 @@ export const projects: Project[] = [
   },
 
   {
-    slug: "rani-smena",
-    title: "Ranní směna",
+    slug: "mlada-krev",
+    title: "Mladá krev",
     status: "produced",
-    year: "2024",
-    format: { cs: "Krátký film", en: "Short film" },
-    length: { cs: "18 min", en: "18 min" },
+    year: "2025",
+    format: { cs: "Kriminální série", en: "Crime series" },
+    length: { cs: "13 × 55 min", en: "13 × 55 min" },
     logline: {
-      cs: "Noční řidič tramvaje veze na poslední jízdě cestujícího, kterého zná lépe, než by chtěl.",
-      en: "On his last run of the night, a tram driver carries a passenger he knows better than he would like.",
+      cs: "Na krajském oddělení vražd se energie a nové metody mladých adeptů střetávají s rutinou ostřílených kriminalistů — a všechny případy spojuje jedna nevyřešená vražda.",
+      en: "At a regional homicide unit, the energy and fresh methods of young recruits collide with the routine of seasoned detectives — and every case is tied together by one unsolved murder.",
     },
     synopsis: [
       {
-        cs: "Komorní hraný film odehrávající se v jedné jízdě přes město. Dva lidé, kteří se dvacet let neviděli, mají čtvrt hodiny na to, aby si něco řekli.",
-        en: "A chamber fiction piece set over a single ride across the city. Two people who haven't met in twenty years have fifteen minutes to say something.",
+        cs: "Kriminální seriál Mladá krev propojuje zkušenosti ostřílených policistů s energií a inovativním přístupem mladých kriminalistů. Seriál zasazený do prostředí krajského oddělení vražd nabízí napínavé případy, generační střety, humor i vztahové zvraty.",
+        en: "Mladá krev (Young Blood) brings together the experience of veteran police officers and the energy and innovative thinking of a new generation of detectives. Set in a regional homicide unit, the series offers gripping cases, generational clashes, humour and shifting relationships.",
       },
       {
-        cs: "Natočeno během tří nocí v provozní tramvaji, kompletně v exteriérovém světle města.",
-        en: "Shot over three nights in a working tram, entirely in the city's own light.",
+        cs: "Každá epizoda přináší nový případ, na jehož vyšetřování spolupracuje dvojice složená z mladého adepta a zkušeného profesionála. Děj se odehrává v Hradci, kde se velké kauzy mísí s lokální kriminalitou.",
+        en: "Each episode brings a new case investigated by a pair made up of a young recruit and an experienced professional. The story unfolds in Hradec, where major cases mix with small-town crime.",
+      },
+      {
+        cs: "Epizodické případy propojuje větší ústřední záhada — nevyřešená vražda ženy zastřelené na břehu rybníka. Tato linka postupně odhaluje, že pachatel může být blíž, než si kdokoli myslí.",
+        en: "The episodic cases are threaded through a larger central mystery — the unsolved shooting of a woman on the bank of a pond. That storyline gradually reveals that the perpetrator may be closer than anyone thinks.",
       },
     ],
     credits: [
-      { role: roles.director, name: "Martin Hruška" },
-      { role: roles.dop, name: "Jan Beneš" },
-      { role: roles.producer, name: "Tereza Malá" },
+      { role: roles.writer, name: "Alice Nellis, Jan Dvořáček, Lucia Kajánková, Martina Kinská, Hana Cielová" },
+      { role: roles.director, name: "Alice Nellis, Jasmina Blaževič, Jaroslav Fuit, Jakub Machala" },
+      {
+        role: roles.producer,
+        name: "Klára Bukovská (Pozitiv Films), Ondřej Zach (Pozitiv Films), FTV Prima",
+      },
+      { role: roles.broadcaster, name: "FTV Prima, 2025" },
+      {
+        role: roles.cast,
+        name: "Igor Bareš, Kryštof Hádek, Lucie Žáčková, Natálie Drabiščáková, Simona Lewandowská, Julia Issa, Adam Ernest, Samuel Toman, Jan Jankovský, Martin Kubačák, Pavlína Štorková, Jan Révai, Filip Čapka",
+      },
     ],
-    still: project2,
+    still: mladaKrevStill.url,
     stillAlt: {
-      cs: "Noční tramvaj na mokré ulici",
-      en: "A night tram on a wet street",
+      cs: "Klíčová grafika série Mladá krev — vyšetřovatelé krajského oddělení vražd",
+      en: "Key art for the series Mladá krev — detectives of the regional homicide unit",
     },
+    externalLinks: [
+      { label: { cs: "Kinobox", en: "Kinobox" }, url: "https://www.kinobox.cz/film/4871764-mlada-krev" },
+      { label: { cs: "ČSFD", en: "ČSFD" }, url: "https://www.csfd.cz/film/1714396-mlada-krev/prehled/" },
+    ],
   },
+
   {
     slug: "marika",
     title: "Marika",
