@@ -63,6 +63,8 @@ export const copy = {
   labelEmail: { cs: "E-mail", en: "Email" },
   labelPhone: { cs: "Telefon", en: "Phone" },
   labelStudio: { cs: "Studio", en: "Studio" },
+  labelInstagram: { cs: "Instagram", en: "Instagram" },
+
   backToProjects: { cs: "Zpět na projekty", en: "Back to projects" },
   logline: { cs: "Logline", en: "Logline" },
   synopsis: { cs: "Synopse", en: "Synopsis" },
