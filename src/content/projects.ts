@@ -239,7 +239,7 @@ export const projects: Project[] = [
     title: "Čtyřhra",
     status: "development",
     year: "2028",
-    format: { cs: "Dramedy série", en: "Dramedy series" },
+    format: { cs: "Dramedy ", en: "Dramedy series" },
     length: { cs: "8 × 52 min", en: "8 × 52 min" },
     logline: {
       cs: "Slavní manželští terapeuti se ocitnou na hraně rozvodu, když se jim na prahu objeví nemanželská dcera jednoho z nich. Neochotně se o ni začnou starat, aby udrželi svou úspěšnou praxi — a nakonec je to právě problémová puberťačka, kdo jim pomůže zachránit vlastní vztah.",
