@@ -5,7 +5,7 @@ type Bi = { cs: string; en: string };
 
 export const company = {
   legalName: "Pozitiv Films s.r.o.",
-  email: "klarabuk@gmail.com",
+  email: "info@pozitiv-films.cz",
   phone: "+420 603 252 565",
   website: "www.pozitiv-films.cz",
   address: {
@@ -18,13 +18,13 @@ export const company = {
     {
       name: "Klára Bukovská",
       role: { cs: "Producentka", en: "Producer" },
-      email: "klarabuk@gmail.com",
+      email: "klara.bukovska@pozitiv-films.cz",
       phone: "+420 603 252 565",
     },
     {
       name: "Ondřej Zach",
       role: { cs: "Producent", en: "Producer" },
-      email: "ondrej.zach@ozet.eu",
+      email: "ondrej.zach@pozitiv-films.cz",
       phone: "+420 724 004 747",
     },
   ],
@@ -103,7 +103,7 @@ export const founders = [
     name: "Klára Bukovská",
     role: { cs: "Producentka", en: "Producer" },
     photo: founder1,
-    email: "klarabuk@gmail.com",
+    email: "klara.bukovska@pozitiv-films.cz",
     bio: [
       {
         cs: "Klára je spoluzakladatelkou Pozitiv Films. Vede vývoj látek a spolupráci s autory a režiséry — od prvního nápadu přes scénář až po nastavení projektu s koprodukčními partnery a televizí.",
@@ -120,7 +120,7 @@ export const founders = [
     name: "Ondřej Zach",
     role: { cs: "Producent", en: "Producer" },
     photo: founder2,
-    email: "ondrej.zach@ozet.eu",
+    email: "ondrej.zach@pozitiv-films.cz",
     bio: [
       {
         cs: "Ondřej je spoluzakladatelem Pozitiv Films. Má na starosti výrobu a financování — rozpočty, harmonogramy, štáby a dodání projektů.",
