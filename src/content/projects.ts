@@ -220,7 +220,7 @@ export const projects: Project[] = [
       },
     ],
     credits: [
-      { role: roles.writer, name: "Alice Nellis, Jan Dvořáček, Lucia Kajánková, Martina Kinská, Hana Cielová" },
+      { role: roles.writer, name: "Alice Nellis" },
       { role: roles.director, name: "Alice Nellis" },
       {
         role: roles.producer,
@@ -248,19 +248,19 @@ export const projects: Project[] = [
     synopsis: [
       {
         cs: "",
-        en: "The elite marriage therapists Klára and David Holub run a successful counseling center specializing in \u201cdoubles\u201d therapy, in which they, as partners, act out their clients' toxic behavior to fix broken relationships. The unorthodox method and prestigious clientele made them media darlings, and the Holubs, with their neat daughter Laura (14), regularly appear in lifestyle magazines as ultimate 21st-century family role models.",
+        en: "",
       },
       {
         cs: "",
-        en: "This image cracks when the working-class gardener Marie appears in David Holub's office, with her fourteen-year-old daughter Niki in tow. His daughter Niki. Marie never told him she was pregnant too, and raised Niki as a hard-working single mother. Now, facing urgent long-term hospitalization, she sees no other option than to entrust her temporarily to David's care. Deeply hurt by David's past infidelity, Klára ponders kicking him out — but then considers how divorce could traumatize their own daughter and damage the practice they both invested all their money and time into: who would buy relationship advice from a divorcing couple? Eventually, a precarious truce is brokered: Niki can move in on the condition that her true identity remains secret from Laura.",
+        en: "",
       },
       {
         cs: "",
-        en: "Holub's clinic becomes a battleground: Klára and David begin weaponizing the Doubles therapy to covertly attack each other during sessions, which ironically leads to unprecedented therapeutic breakthroughs. At home, what begins as a clash of incompatible worlds slowly morphs into a reluctant alliance as Niki discovers that the \u201cperfect\u201d Laura hides a dangerous online double life, and helps her navigate the fallout of her digital transgressions.",
+        en: "",
       },
       {
         cs: "",
-        en: "The minefield in the Holubs' household finally explodes when Laura uncovers the truth about Niki's paternity, and Niki emotionally slips toward a destructive breaking point. To pull her back from the brink, Laura must reveal the truth about her own second life to her parents. Klára and David finally face reality: their obsession with a marketable, flawless brand blinded them to the actual crises tearing their family apart. Stripped of their pristine image, they start rebuilding their relationship — and in the wreckage of that false facade, Laura and Niki forge a permanent bond, each discovering the sister they never knew they were missing.",
+        en: "",
       },
       {
         cs: "Ve vývoji: leden 2026 – prosinec 2026. ",
