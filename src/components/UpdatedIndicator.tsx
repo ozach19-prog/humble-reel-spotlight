@@ -45,7 +45,12 @@ export function UpdatedIndicator() {
     return () => import.meta.hot?.off("vite:afterUpdate", onUpdate);
   }, []);
 
-  useEffect(() => () => timer.current && clearTimeout(timer.current), []);
+  useEffect(() => {
+    return () => {
+      if (timer.current) clearTimeout(timer.current);
+    };
+  }, []);
+
 
   return (
     <div
