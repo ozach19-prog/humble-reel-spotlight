@@ -48,9 +48,11 @@ function AboutPage() {
         <SectionLabel>{copy.aboutTag[lang]}</SectionLabel>
         <h1 className="mt-6 max-w-2xl text-3xl sm:text-5xl">{copy.aboutHeading[lang]}</h1>
         <div className="mt-8 max-w-2xl space-y-4 leading-relaxed text-muted-foreground">
-          {copy.aboutParagraphs.map((p) => (
-            <p key={p.en}>{p[lang]}</p>
-          ))}
+          {copy.aboutParagraphs
+            .filter((p) => p[lang].trim().length > 1)
+            .map((p, i) => (
+              <p key={i}>{p[lang]}</p>
+            ))}
         </div>
 
         <div className="mt-16">
