@@ -181,8 +181,8 @@ export const projects: Project[] = [
     ],
     credits: [
       { role: roles.writer, name: "Alice Nellis" },
-      { role: roles.director, name: "Alice Nellis, Pavel Soukup / Michal Blaško" },
-      { role: roles.dop, name: "Matěj Cibulka" },
+      { role: roles.director, name: "Alice Nellis, Michal Blaško" },
+      { role: roles.dop, name: "Matěj Cibulka, Oliver Záhlava" },
       { role: roles.designer, name: "Jan Vlasák" },
       { role: roles.costume, name: "Katarína Hollá" },
       { role: roles.editor, name: "Filip Issa" },
