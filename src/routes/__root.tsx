@@ -12,6 +12,9 @@ import { useEffect, type ReactNode } from "react";
 import appCss from "../styles.css?url";
 import { reportLovableError } from "../lib/lovable-error-reporting";
 import { LanguageProvider } from "../lib/language";
+import { ContentProvider, useContentEditor } from "../lib/content-store";
+import { ContentEditorSidebar, ContentEditorToggle } from "../components/ContentEditor";
+
 
 
 function NotFoundComponent() {
@@ -130,10 +133,30 @@ function RootComponent() {
   return (
     <QueryClientProvider client={queryClient}>
       <LanguageProvider>
-        {/* Required: nested routes render here. Removing <Outlet /> breaks all child routes. */}
-        <Outlet />
+        <ContentProvider>
+          <EditableShell />
+        </ContentProvider>
       </LanguageProvider>
     </QueryClientProvider>
   );
 }
+
+function EditableShell() {
+  const { editorOpen } = useContentEditor();
+
+  return (
+    <>
+      <div
+        className="transition-[padding] duration-200"
+        style={editorOpen ? { paddingRight: "min(380px, 100%)" } : undefined}
+      >
+        {/* Required: nested routes render here. Removing <Outlet /> breaks all child routes. */}
+        <Outlet />
+      </div>
+      <ContentEditorToggle />
+      <ContentEditorSidebar />
+    </>
+  );
+}
+
 
