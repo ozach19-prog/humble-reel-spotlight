@@ -2,8 +2,9 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import { SectionLabel } from "@/components/SectionLabel";
-import { getProject, statusShort } from "@/content/projects";
+import { getProject } from "@/content/projects";
 import { copy } from "@/content/site";
+import { useContent } from "@/lib/content-store";
 import { useLang } from "@/lib/language";
 
 export const Route = createFileRoute("/projects/$slug")({
@@ -36,20 +37,21 @@ export const Route = createFileRoute("/projects/$slug")({
 function ProjectDetail() {
   const { slug } = Route.useParams();
   const { lang } = useLang();
-  const project = getProject(slug);
+  const { projects, statusShort, copy: liveCopy } = useContent();
+  const project = projects.find((p) => p.slug === slug);
 
   if (!project) {
     return (
       <div className="min-h-screen bg-background">
         <Header />
         <main className="mx-auto max-w-5xl px-6 py-24">
-          <h1 className="text-3xl">{copy.notFoundTitle[lang]}</h1>
-          <p className="mt-3 text-muted-foreground">{copy.notFoundText[lang]}</p>
+          <h1 className="text-3xl">{liveCopy.notFoundTitle[lang]}</h1>
+          <p className="mt-3 text-muted-foreground">{liveCopy.notFoundText[lang]}</p>
           <Link
             to="/projects"
             className="mt-6 inline-block font-[family-name:var(--font-display)] text-sm font-semibold underline decoration-primary decoration-2 underline-offset-4"
           >
-            {copy.backToProjects[lang]}
+            {liveCopy.backToProjects[lang]}
           </Link>
         </main>
         <Footer />
@@ -66,7 +68,7 @@ function ProjectDetail() {
             to="/projects"
             className="font-[family-name:var(--font-display)] text-xs tracking-wide text-muted-foreground uppercase transition-colors hover:text-primary"
           >
-            ← {copy.backToProjects[lang]}
+            ← {liveCopy.backToProjects[lang]}
           </Link>
           <div className="mt-6">
             <SectionLabel>{statusShort[project.status][lang]}</SectionLabel>
@@ -90,7 +92,7 @@ function ProjectDetail() {
         <div className="mx-auto grid max-w-5xl gap-12 px-6 py-14 md:grid-cols-[1.4fr_1fr]">
           <div>
             <h2 className="font-[family-name:var(--font-display)] text-sm tracking-wide uppercase">
-              {copy.synopsis[lang]}
+              {liveCopy.synopsis[lang]}
             </h2>
             <div className="mt-4 space-y-4 leading-relaxed text-muted-foreground">
               {project.synopsis.map((p) => (
@@ -101,7 +103,7 @@ function ProjectDetail() {
           <div className="space-y-8">
             <div>
               <h2 className="font-[family-name:var(--font-display)] text-sm tracking-wide uppercase">
-                {copy.detailsLabel[lang]}
+                {liveCopy.detailsLabel[lang]}
               </h2>
               <dl className="mt-4 space-y-2 text-sm">
                 <div className="flex justify-between gap-4 border-b border-border pb-2">
@@ -126,7 +128,7 @@ function ProjectDetail() {
             </div>
             <div>
               <h2 className="font-[family-name:var(--font-display)] text-sm tracking-wide uppercase">
-                {copy.creditsLabel[lang]}
+                {liveCopy.creditsLabel[lang]}
               </h2>
               <dl className="mt-4 space-y-2 text-sm">
                 {project.credits.map((c) => (

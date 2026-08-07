@@ -1,10 +1,11 @@
 import { Link } from "@tanstack/react-router";
 import logo from "@/assets/pozitiv-logo.png.asset.json";
-import { nav } from "@/content/site";
+import { useContent } from "@/lib/content-store";
 import { useLang } from "@/lib/language";
 
 export function Header() {
   const { lang, setLang } = useLang();
+  const { nav } = useContent();
 
   return (
     <header className="border-b border-border">

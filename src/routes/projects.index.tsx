@@ -3,8 +3,8 @@ import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import { ProjectCard } from "@/components/ProjectCard";
 import { SectionLabel } from "@/components/SectionLabel";
-import { projects, statusLabels, statusOrder } from "@/content/projects";
-import { copy } from "@/content/site";
+import { statusOrder } from "@/content/projects";
+import { useContent } from "@/lib/content-store";
 import { useLang } from "@/lib/language";
 
 export const Route = createFileRoute("/projects/")({
@@ -40,6 +40,7 @@ export const Route = createFileRoute("/projects/")({
 
 function ProjectsPage() {
   const { lang } = useLang();
+  const { projects, statusLabels, copy } = useContent();
 
   return (
     <div className="min-h-screen bg-background">

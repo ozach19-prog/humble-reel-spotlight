@@ -3,7 +3,7 @@ import { Footer } from "@/components/Footer";
 import { FounderCard } from "@/components/FounderCard";
 import { Header } from "@/components/Header";
 import { SectionLabel } from "@/components/SectionLabel";
-import { company, copy, founders } from "@/content/site";
+import { useContent } from "@/lib/content-store";
 import { useLang } from "@/lib/language";
 
 export const Route = createFileRoute("/about")({
@@ -39,6 +39,7 @@ export const Route = createFileRoute("/about")({
 
 function AboutPage() {
   const { lang } = useLang();
+  const { company, copy, founders } = useContent();
 
   return (
     <div className="min-h-screen bg-background">
