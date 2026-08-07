@@ -126,6 +126,89 @@ V `site.ts`, seznam `founders`: `name`, `role`, `email`, odstavce `bio` a `credi
 
 ---
 
-## 4. English quick reference
+## 5. Kde je který text (field map)
 
-Same two files, same rules: `src/content/site.ts` for company, navigation, homepage copy, contacts and founder bios; `src/content/projects.ts` for the project slate. Every visible string is a `{ cs, en }` pair — edit both. Keep field names, quotes, commas and braces intact. `status` controls which section a project appears in (`produced` / `production` / `development`), `slug` controls its URL, and page titles plus SEO metadata are generated from this content automatically.
+Zkratky souborů: **site** = `src/content/site.ts`, **projects** = `src/content/projects.ts`.
+`[]` znamená seznam — pole se opakuje pro každou položku (každého producenta, projekt, odstavec).
+
+### Úvodní stránka `/`
+
+| Co vidíte na stránce | Soubor | Pole |
+| --- | --- | --- |
+| Odkazy v horním menu (Projekty, O nás, Kontakt) | site | `nav[].label` |
+| Velký nadpis, první řádek | site | `copy.heroLine1` |
+| Velký nadpis, druhý řádek | site | `copy.heroLine2` |
+| Odstavec pod nadpisem | site | `copy.heroText` |
+| Popis hero obrázku (alt) | site | `copy.heroAlt` |
+| Štítek sekce „O nás“ | site | `copy.aboutTag` |
+| Nadpis sekce „O nás“ | site | `copy.aboutHeading` |
+| Odstavce sekce „O nás“ | site | `copy.aboutParagraphs[]` |
+| Odkaz „Více o nás“ | site | `copy.aboutLink` |
+| Štítek a nadpis sekce projektů | site | `copy.projectsTag`, `copy.projectsHeading` |
+| Nadpisy skupin (Dokončené / Ve výrobě / Ve vývoji) | projects | `statusLabels` |
+| Odkaz „Všechny projekty“ | site | `copy.allProjects` |
+| Štítek a nadpis sekce zakladatelů | site | `copy.foundersTag`, `copy.foundersHeading` |
+| Štítek a nadpis sekce kontaktů | site | `copy.contactTag`, `copy.contactHeading` |
+| Odstavec v kontaktech | site | `copy.contactText` |
+| Jméno producenta | site | `company.contacts[].name` |
+| Role producenta | site | `company.contacts[].role` |
+| E-mail producenta | site | `company.contacts[].email` |
+| Telefon producenta | site | `company.contacts[].phone` |
+| Adresa | site | `company.address` |
+| Instagram (jméno / odkaz) | site | `company.instagramHandle`, `company.instagramUrl` |
+| Web | site | `company.website` |
+| Popisky E-mail / Telefon / Studio / Instagram / Web | site | `copy.labelEmail`, `copy.labelPhone`, `copy.labelStudio`, `copy.labelInstagram`, `copy.labelWeb` |
+| Název firmy v patičce | site | `company.legalName` |
+| E-mail a telefon v patičce | site | `company.email`, `company.phone` |
+
+### Přehled projektů `/projects`
+
+| Co vidíte na stránce | Soubor | Pole |
+| --- | --- | --- |
+| Štítek a nadpis stránky | site | `copy.projectsTag`, `copy.projectsHeading` |
+| Nadpis skupiny projektů | projects | `statusLabels` |
+| Název projektu na kartě | projects | `projects[].title` |
+| Rok | projects | `projects[].year` |
+| Formát (např. „Komediální série“) | projects | `projects[].format` |
+| Krátký text na kartě | projects | `projects[].logline` |
+| Obrázek karty | projects | `projects[].still` (soubor v `src/assets`) |
+| Popis obrázku (alt) | projects | `projects[].stillAlt` |
+| Do které skupiny projekt patří | projects | `projects[].status` |
+
+### Podstránka projektu `/projects/<slug>`
+
+| Co vidíte na stránce | Soubor | Pole |
+| --- | --- | --- |
+| Odkaz „Zpět na projekty“ | site | `copy.backToProjects` |
+| Název projektu | projects | `projects[].title` |
+| Řádek s údaji (rok, formát, délka) | projects | `projects[].year`, `projects[].format`, `projects[].length` |
+| Nadpisy Logline / Synopse / Štáb / Údaje | site | `copy.logline`, `copy.synopsis`, `copy.creditsLabel`, `copy.detailsLabel` |
+| Logline | projects | `projects[].logline` |
+| Odstavce synopse | projects | `projects[].synopsis[]` |
+| Řádky štábu (role + jméno) | projects | `projects[].credits[]` |
+| Externí odkazy (ČSFD, Kinobox, festival) | projects | `projects[].externalLinks[]` |
+| Adresa podstránky (URL) | projects | `projects[].slug` |
+| Text „Projekt nenalezen“ | site | `copy.notFoundTitle`, `copy.notFoundText` |
+
+### O nás `/about`
+
+| Co vidíte na stránce | Soubor | Pole |
+| --- | --- | --- |
+| Štítek a nadpis stránky | site | `copy.aboutTag`, `copy.aboutHeading` |
+| Úvodní odstavce | site | `copy.aboutParagraphs[]` |
+| Štítek sekce zakladatelů | site | `copy.foundersTag` |
+| Jméno zakladatele | site | `founders[].name` |
+| Role zakladatele | site | `founders[].role` |
+| Portrét | site | `founders[].photo` (soubor v `src/assets`) |
+| E-mail | site | `founders[].email` |
+| Odstavce biografie | site | `founders[].bio[]` |
+| Nadpis „Vybraná filmografie“ | site | `copy.selectedCredits` |
+| Seznam filmů u zakladatele | site | `founders[].credits[]` |
+| Kontaktní blok dole (firma, e-mail, telefon) | site | `company.legalName`, `company.email`, `company.phone` |
+
+---
+
+## 6. English quick reference
+
+Same two files, same rules: `src/content/site.ts` for company, navigation, homepage copy, contacts and founder bios; `src/content/projects.ts` for the project slate. Section 5 above is a field map: for every block you see on a page it names the file and the exact field (`copy.heroText`, `company.contacts[].phone`, `projects[].synopsis[]`), so you never have to search the code. Every visible string is a `{ cs, en }` pair — edit both. Keep field names, quotes, commas and braces intact. `status` controls which section a project appears in (`produced` / `production` / `development`), `slug` controls its URL, and page titles plus SEO metadata are generated from this content automatically.
+
