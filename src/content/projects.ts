@@ -204,7 +204,7 @@ export const projects: Project[] = [
     status: "production",
     year: "2026",
     format: { cs: "Kriminální série", en: "Crime series" },
-    length: { cs: "13 × 55 min", en: "13 × 55 min" },
+    length: { cs: "13 × 55 min", en: "8 × 55 min" },
     logline: {
       cs: "Druhá řada Mladé krve. Mladí kriminalisté už nejsou nováčci — a případy, které přicházejí, jsou osobnější než kdy dřív.",
       en: "The second season of Young Blood. The young detectives are no longer rookies — and the cases coming their way are more personal than ever.",
