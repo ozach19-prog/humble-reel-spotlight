@@ -44,8 +44,8 @@ export const copy = {
     en: "A boutique production company for contemporary film and television.",
   },
   heroAlt: {
-    cs: "Kameraman snímá rozhovor v přirozeném světle",
-    en: "Cinematographer filming an interview in natural light",
+    cs: "Scéna ze seriálu — skupina postav v chodbě školy s digitálními hodinami",
+    en: "Series scene — a group of characters in a school corridor with a digital clock",
   },
   aboutTag: { cs: "O nás", en: "About us" },
   aboutHeading: {
