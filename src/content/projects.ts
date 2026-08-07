@@ -220,7 +220,7 @@ export const projects: Project[] = [
       },
     ],
     credits: [
-      { role: roles.writer, name: "Alice Nellis" },
+      { role: roles.writer, name: "Alice Nellis, Jan Dvořáček, Lucia Kajánková, Martina Kinská, Hana Cielová" },
       { role: roles.director, name: "Alice Nellis" },
       {
         role: roles.producer,
