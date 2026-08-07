@@ -130,18 +130,15 @@ export const founders = [
     email: "ondrej.zach@pozitiv-films.cz",
     bio: [
       {
-        cs: "Ondřej Zach vystudoval filmovou vědu a informační studia na Filozofické fakultě Univerzity Karlovy a v roce 2020 magisterský obor filmová a divadelní věda na Univerzitě Palackého v Olomouci, kde dnes učí a je doktorandem. V letech 1990–1998 psal o filmu pro Film a doba, Cinemu a denní tisk a byl členem programového týmu MFF Karlovy Vary.",
-        en: "Ondřej Zach studied Film Studies and Information Science at the Faculty of Arts, Charles University, and in 2020 completed an MA in Film and Theatre Studies at Palacký University in Olomouc, where he now teaches as a PhD candidate. Between 1990 and 1998 he wrote about film for Film a doba, Cinema and the daily press, and was a member of the programme team of the Karlovy Vary International Film Festival.",
+        cs: "Od začátku 90. let působí jako filmový kritik a kurátor — publikoval v měsíčníku Film a doba, v denním tisku a filmových časopisech a byl členem programového týmu MFF Karlovy Vary (1994–1998). Poté zastával vedoucí programové a manažerské pozice v TV Nova a HBO Europe (1996–2017) a byl proděkanem FAMU pro mezinárodní vztahy a předsedou FAMU International (2017–2021).",
+        en: "Since the early 1990s he has worked as a critic and curator, publishing in the monthly Film a doba, the daily press and film magazines, and serving on the programming team of the Karlovy Vary International Film Festival (1994–1998). He then held senior programming and management positions at TV Nova and HBO Europe (1996–2017), and was Vice Dean for International Relations at FAMU and Chair of FAMU International (2017–2021).",
       },
       {
-        cs: "Osmnáct let strávil na vedoucích programových pozicích v televizi: v TV Nova a AQS (akvizice a programování, 1996–2006) a poté v HBO Europe, kde byl výkonným ředitelem HBO Česká republika, Senior Vice President pro program a nakonec COO pro střední Evropu (2006–2017). V letech 2017–2021 byl proděkanem FAMU pro mezinárodní vztahy a předsedou FAMU International. Je členem České filmové a televizní akademie.",
-        en: "He spent eighteen years in senior television programming roles: at TV Nova and AQS (acquisitions and programming, 1996–2006) and then at HBO Europe, as Executive Director of HBO Czech Republic, Senior Vice President of Programming and finally COO for Central Europe (2006–2017). From 2017 to 2021 he was Vice Dean for International Relations at FAMU and Chair of FAMU International. He is a member of the Czech Film and Television Academy.",
-      },
-      {
-        cs: "Od roku 2022 je spolumajitelem a výkonným producentem Pozitiv Films.",
-        en: "Since 2022 he has been co-owner and executive producer of Pozitiv Films.",
+        cs: "V letech 2018–2022 byl členem Rady Státního fondu kinematografie. Je členem České filmové a televizní akademie. Od roku 2022 je spolumajitelem a výkonným producentem Pozitiv Films.",
+        en: "From 2018 to 2022 he served on the Board of the Czech Film Fund. He is a member of the Czech Film and Television Academy. Since 2022 he has been co-owner and executive producer of Pozitiv Films.",
       },
     ],
+
     credits: [
       "Mladá krev II (ve výrobě)",
       "Marika (ve výrobě)",
