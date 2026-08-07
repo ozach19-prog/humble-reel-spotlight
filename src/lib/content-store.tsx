@@ -214,20 +214,34 @@ export function ContentProvider({ children }: { children: ReactNode }) {
 }
 
 function useContentContext() {
-  const ctx = useContext(ContentContext);
-  if (!ctx) throw new Error("useContent must be used inside ContentProvider");
-  return ctx;
+  return useContext(ContentContext);
 }
 
-/** Live (override-aware) site content for rendering. */
+/** Live (override-aware) site content for rendering. Falls back to source content. */
 export function useContent() {
-  return useContentContext().content;
+  const ctx = useContentContext();
+  return ctx?.content ?? baseContent;
 }
+
+const noopEditor = {
+  overrides: {} as Overrides,
+  groups: buildGroups(baseContent),
+  baseValue: (path: string) => getPath(baseContent, path) ?? "",
+  currentValue: (path: string) => getPath(baseContent, path) ?? "",
+  setValue: () => {},
+  resetField: () => {},
+  resetAll: () => {},
+  editorOpen: false,
+  setEditorOpen: () => {},
+};
 
 /** Editor state and mutations for the content sidebar. */
 export function useContentEditor() {
-  const { content: _content, ...rest } = useContentContext();
+  const ctx = useContentContext();
+  if (!ctx) return noopEditor;
+  const { content: _content, ...rest } = ctx;
   return rest;
 }
+
 
 export { statusOrder };
