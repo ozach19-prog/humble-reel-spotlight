@@ -108,16 +108,12 @@ export const founders = [
     email: "klara.bukovska@pozitiv-films.cz",
     bio: [
       {
-        cs: "Klára Bukovská (nar. 1968 v Praze) vystudovala produkci na FAMU (1992–1997). Ještě během studií pracovala v produkci reklamní agentury Leo Burnett a od té doby působí jako nezávislá producentka a vedoucí výroby na celovečerních filmech, seriálech, dokumentech i reklamě.",
-        en: "Klára Bukovská (b. 1968 in Prague) graduated in production from FAMU (1992–1997). While still studying she worked in production at the Leo Burnett advertising agency, and has since worked as an independent producer and production manager on features, series, documentaries and commercials.",
+        cs: "Klára Bukovská (nar. 1968) vystudovala produkci na FAMU a od 90. let pracuje jako producentka a vedoucí výroby na celovečerních filmech, seriálech a dokumentech. Spolupracovala na filmech Jana Svěráka (Kolja, Tmavomodrý svět) a dlouhodobě na projektech Alice Nellis.",
+        en: "Klára Bukovská (b. 1968) graduated in production from FAMU and has worked since the 1990s as a producer and production manager on features, series and documentaries. She collaborated on Jan Svěrák's films (Kolya, Dark Blue World) and, over many years, on Alice Nellis's projects.",
       },
       {
-        cs: "Spolupracovala na filmech Jana Svěráka (Kolja, Tmavomodrý svět) a dlouhodobě na projektech Alice Nellis (Ene bene, Výlet, Sedmero krkavců, dokument o adopcích pro HBO Europe). Vedla produkci festivalu Febiofest a pracovala na mezinárodních projektech (Wanted, Anne Frank, Allmen).",
-        en: "She has worked on Jan Svěrák's films (Kolya, Dark Blue World) and, over many years, on Alice Nellis's projects (Ene bene, The Trip, Seven Ravens, an observational documentary on adoption for HBO Europe). She was head of production of the Febiofest film festival and worked on international productions (Wanted, Anne Frank, Allmen).",
-      },
-      {
-        cs: "V televizi stojí za dlouhými i minisériemi pro TV Nova a FTV Prima (Doktoři z Počátků, Kameňák, Zpověď, Pod hladinou, Poslední oběť) a od roku 2023 je producentkou Pozitiv Films — Náhradníci, Mladá krev, Mladá krev II, Marika a Čtyřhra.",
-        en: "In television she is behind long-running and limited series for TV Nova and FTV Prima (Doctors from Počátky, Kameňák, Midnight Confession, Under Water, The Last Victim), and since 2023 she has been a producer at Pozitiv Films — Náhradníci, Mladá krev, Mladá krev II, Marika and Čtyřhra.",
+        cs: "V televizi stojí za sériemi pro TV Nova a FTV Prima. Od roku 2023 je producentkou Pozitiv Films — Náhradníci, Mladá krev, Mladá krev II, Marika a Čtyřhra.",
+        en: "In television she is behind series for TV Nova and FTV Prima. Since 2023 she has been a producer at Pozitiv Films — Náhradníci, Mladá krev, Mladá krev II, Marika and Čtyřhra.",
       },
     ],
     credits: [
@@ -126,16 +122,11 @@ export const founders = [
       "Čtyřhra (ve vývoji)",
       "Mladá krev (2025)",
       "Náhradníci (2024)",
-      "Poslední oběť (2023)",
-      "Pod hladinou (2022)",
-      "Zpověď (2021)",
-      "Láska na špičkách (2020)",
-      "Kameňák (2018)",
       "Sedmero krkavců (2015)",
-      "Doktoři z Počátků (2013–2015)",
       "Tmavomodrý svět (2000)",
       "Kolja (1997)",
     ],
+
   },
 
   {
