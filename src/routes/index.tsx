@@ -1,7 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
+import foundersAsset from "@/assets/founders.jpg.asset.json";
 import heroSet from "@/assets/hero-set.jpg";
 import { Footer } from "@/components/Footer";
-import { FounderCard } from "@/components/FounderCard";
 import { Header } from "@/components/Header";
 import { ProjectCard } from "@/components/ProjectCard";
 import { SectionLabel } from "@/components/SectionLabel";
@@ -130,11 +130,19 @@ function Home() {
         <section className="mx-auto max-w-5xl px-6 py-16 sm:py-24">
           <SectionLabel>{copy.foundersTag[lang]}</SectionLabel>
           <h2 className="mt-6 text-2xl sm:text-3xl">{copy.foundersHeading[lang]}</h2>
-          <div className="mt-8 grid max-w-lg gap-8 sm:grid-cols-2">
-            {founders.map((f) => (
-              <FounderCard key={f.name} founder={f} />
-            ))}
-          </div>
+          <figure className="mt-8 max-w-2xl">
+            <img
+              src={foundersAsset.url}
+              alt={founders.map((f) => f.name).join(" & ")}
+              width={1440}
+              height={1920}
+              loading="lazy"
+              className="aspect-[4/3] w-full object-cover"
+            />
+            <figcaption className="mt-3 font-[family-name:var(--font-display)] text-xs text-primary">
+              {founders.map((f) => f.name).join(" & ")}
+            </figcaption>
+          </figure>
           <Link
             to="/about"
             className="mt-8 inline-block font-[family-name:var(--font-display)] text-sm font-semibold underline decoration-primary decoration-2 underline-offset-4"
