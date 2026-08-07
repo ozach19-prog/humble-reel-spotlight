@@ -34,14 +34,18 @@ export function FounderCard({ founder, full }: { founder: Founder; full?: boolea
                 <p key={p.en}>{p[lang]}</p>
               ))}
             </div>
-            <p className="mt-4 font-[family-name:var(--font-display)] text-xs tracking-wide text-muted-foreground uppercase">
-              {copy.selectedCredits[lang]}
-            </p>
-            <ul className="mt-1 text-sm text-muted-foreground">
-              {founder.credits.map((c) => (
-                <li key={c}>{c}</li>
-              ))}
-            </ul>
+            {founder.credits.length > 0 && (
+              <>
+                <p className="mt-4 font-[family-name:var(--font-display)] text-xs tracking-wide text-muted-foreground uppercase">
+                  {copy.selectedCredits[lang]}
+                </p>
+                <ul className="mt-1 text-sm text-muted-foreground">
+                  {founder.credits.map((c) => (
+                    <li key={c}>{c}</li>
+                  ))}
+                </ul>
+              </>
+            )}
             <a
               href={`mailto:${founder.email}`}
               className="mt-4 inline-block text-sm underline decoration-primary decoration-2 underline-offset-4"
