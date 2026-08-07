@@ -247,30 +247,30 @@ export const projects: Project[] = [
     },
     synopsis: [
       {
-        cs: "Elitní manželští terapeuti Klára a David Holubovi vedou úspěšnou poradnu specializovanou na terapii „čtyřhrou“, v níž jako pár přehrávají toxické chování svých klientů. Neortodoxní metoda a prestižní klientela z nich udělaly mediální hvězdy — s dokonalou dcerou Laurou (14) pravidelně pózují v lifestylových magazínech jako vzorová rodina 21. století.",
+        cs: "",
         en: "The elite marriage therapists Klára and David Holub run a successful counseling center specializing in \u201cdoubles\u201d therapy, in which they, as partners, act out their clients' toxic behavior to fix broken relationships. The unorthodox method and prestigious clientele made them media darlings, and the Holubs, with their neat daughter Laura (14), regularly appear in lifestyle magazines as ultimate 21st-century family role models.",
       },
       {
-        cs: "Obraz se rozpadá, když se v Davidově ordinaci objeví zahradnice Marie se čtrnáctiletou Niki. Davidovou dcerou Niki. Marie mu tehdy nikdy neřekla, že je také těhotná, a vychovala dceru sama. Teď ji čeká dlouhá hospitalizace a nevidí jinou možnost než ji Davidovi na čas svěřit. Klára, zraněná zjištěním o dávné nevěře, uvažuje o rozvodu — ale co by to udělalo s jejich dcerou a se společnou praxí? Kdo by si kupoval rady o vztazích od rozvádějícího se páru? Vzniká křehké smíření: Niki se může přistěhovat, pokud její pravá identita zůstane před Laurou tajemstvím.",
+        cs: "",
         en: "This image cracks when the working-class gardener Marie appears in David Holub's office, with her fourteen-year-old daughter Niki in tow. His daughter Niki. Marie never told him she was pregnant too, and raised Niki as a hard-working single mother. Now, facing urgent long-term hospitalization, she sees no other option than to entrust her temporarily to David's care. Deeply hurt by David's past infidelity, Klára ponders kicking him out — but then considers how divorce could traumatize their own daughter and damage the practice they both invested all their money and time into: who would buy relationship advice from a divorcing couple? Eventually, a precarious truce is brokered: Niki can move in on the condition that her true identity remains secret from Laura.",
       },
       {
-        cs: "Holubova poradna se mění v kolbiště — terapii „čtyřhrou“ začnou manželé používat jako zbraň proti sobě, což paradoxně vede k nevídaným terapeutickým průlomům. Doma se z konfliktu dvou nesourodých světů postupně rodí spojenectví: Niki odhalí, že „perfektní“ Laura vede nebezpečný druhý život online, a začne jí pomáhat nést jeho následky.",
+        cs: "",
         en: "Holub's clinic becomes a battleground: Klára and David begin weaponizing the Doubles therapy to covertly attack each other during sessions, which ironically leads to unprecedented therapeutic breakthroughs. At home, what begins as a clash of incompatible worlds slowly morphs into a reluctant alliance as Niki discovers that the \u201cperfect\u201d Laura hides a dangerous online double life, and helps her navigate the fallout of her digital transgressions.",
       },
       {
-        cs: "Když Laura náhodou zjistí pravdu o Nikiině otcovství, mina v domě Holubů vybuchne a Niki se emočně blíží k destruktivnímu bodu zlomu. Aby ji zachránila, musí Laura rodičům přiznat svůj vlastní druhý život. Klára a David konečně vidí, že jim posedlost bezchybnou značkou zaslepila oči před skutečnou krizí rodiny. Zbaveni dokonalého obrazu začnou svůj vztah budovat znovu — a z trosek té fasády vzejde mezi Laurou a Niki trvalé sesterství.",
+        cs: "",
         en: "The minefield in the Holubs' household finally explodes when Laura uncovers the truth about Niki's paternity, and Niki emotionally slips toward a destructive breaking point. To pull her back from the brink, Laura must reveal the truth about her own second life to her parents. Klára and David finally face reality: their obsession with a marketable, flawless brand blinded them to the actual crises tearing their family apart. Stripped of their pristine image, they start rebuilding their relationship — and in the wreckage of that false facade, Laura and Niki forge a permanent bond, each discovering the sister they never knew they were missing.",
       },
       {
-        cs: "Ve vývoji: leden 2026 – prosinec 2026. Přípravy 2027, natáčení 2027–2028 (68 natáčecích dní), premiéra na České televizi na podzim 2028.",
+        cs: "Ve vývoji: leden 2026 – prosinec 2026. ",
         en: "In development: January 2026 – December 2026. Preproduction 2027, shooting 2027–2028 (68 shooting days), Czech Television premiere in autumn 2028.",
       },
     ],
     credits: [
       { role: roles.writer, name: "Alice Nellis" },
       { role: roles.director, name: "Alice Nellis, Jiří Havelka" },
-      { role: roles.production, name: "Pozitiv Films" },
+      { role: roles.production, name: "2028" },
       { role: roles.broadcaster, name: "Česká televize, ČT1 prime time, podzim 2028" },
     ],
     still: ctyrhraStill.url,
