@@ -202,7 +202,7 @@ export const projects: Project[] = [
     slug: "mlada-krev-ii",
     title: "Mladá krev II",
     status: "production",
-    year: "2026",
+    year: "2027",
     format: { cs: "Kriminální série", en: "Crime series" },
     length: { cs: "8 × 55 min", en: "8 × 55 min" },
     logline: {
