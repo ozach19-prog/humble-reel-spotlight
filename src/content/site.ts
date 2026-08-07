@@ -77,7 +77,7 @@ export const copy = {
   contactHeading: { cs: "Napište nám.", en: "Get in touch." },
   contactText: {
     cs: "",
-    en: "Tell us what you have in mind — even if it's just one sentence. We usually reply within a day.",
+    en: "",
   },
   labelEmail: { cs: "E-mail", en: "Email" },
   labelPhone: { cs: "Telefon", en: "Phone" },
