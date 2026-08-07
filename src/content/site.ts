@@ -5,7 +5,7 @@ type Bi = { cs: string; en: string };
 
 export const company = {
   legalName: "Pozitiv Films s.r.o.",
-  email: "klara.bukovska@pozitiv-films.cz",
+  email: "info@pozitiv-films.cz",
   phone: "+420 603 252 565",
   website: "www.pozitiv-films.cz",
   address: {
