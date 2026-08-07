@@ -1,8 +1,9 @@
-import { company, copy } from "@/content/site";
+import { useContent } from "@/lib/content-store";
 import { useLang } from "@/lib/language";
 
 export function Footer() {
   const { lang } = useLang();
+  const { company, copy } = useContent();
 
   return (
     <footer className="border-t border-border">

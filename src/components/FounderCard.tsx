@@ -1,10 +1,12 @@
-import { copy, founders } from "@/content/site";
+import { founders } from "@/content/site";
+import { useContent } from "@/lib/content-store";
 import { useLang } from "@/lib/language";
 
 type Founder = (typeof founders)[number];
 
 export function FounderCard({ founder, full }: { founder: Founder; full?: boolean }) {
   const { lang } = useLang();
+  const { copy } = useContent();
 
   return (
     <div className={full ? "grid gap-6 sm:grid-cols-[220px_1fr]" : ""}>

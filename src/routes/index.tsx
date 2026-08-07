@@ -5,8 +5,8 @@ import { FounderCard } from "@/components/FounderCard";
 import { Header } from "@/components/Header";
 import { ProjectCard } from "@/components/ProjectCard";
 import { SectionLabel } from "@/components/SectionLabel";
-import { projects, statusLabels, statusOrder } from "@/content/projects";
-import { company, copy, founders } from "@/content/site";
+import { statusOrder } from "@/content/projects";
+import { useContent } from "@/lib/content-store";
 import { useLang } from "@/lib/language";
 
 export const Route = createFileRoute("/")({
@@ -42,6 +42,7 @@ export const Route = createFileRoute("/")({
 
 function Home() {
   const { lang } = useLang();
+  const { projects, statusLabels, company, copy, founders } = useContent();
 
   return (
     <div className="min-h-screen bg-background">

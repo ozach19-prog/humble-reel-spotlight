@@ -2,8 +2,9 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import { SectionLabel } from "@/components/SectionLabel";
-import { getProject, statusShort } from "@/content/projects";
+import { getProject } from "@/content/projects";
 import { copy } from "@/content/site";
+import { useContent } from "@/lib/content-store";
 import { useLang } from "@/lib/language";
 
 export const Route = createFileRoute("/projects/$slug")({
@@ -36,7 +37,8 @@ export const Route = createFileRoute("/projects/$slug")({
 function ProjectDetail() {
   const { slug } = Route.useParams();
   const { lang } = useLang();
-  const project = getProject(slug);
+  const { projects, statusShort, copy: liveCopy } = useContent();
+  const project = projects.find((p) => p.slug === slug);
 
   if (!project) {
     return (

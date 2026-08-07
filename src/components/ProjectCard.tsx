@@ -1,9 +1,11 @@
 import { Link } from "@tanstack/react-router";
-import { statusShort, type Project } from "@/content/projects";
+import { type Project } from "@/content/projects";
+import { useContent } from "@/lib/content-store";
 import { useLang } from "@/lib/language";
 
 export function ProjectCard({ project }: { project: Project }) {
   const { lang } = useLang();
+  const { statusShort } = useContent();
 
   return (
     <Link
