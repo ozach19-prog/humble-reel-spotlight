@@ -12,8 +12,8 @@ export const company = {
     cs: "Olšanská 3, Praha 3, 130 00, Česká republika",
     en: "Olšanská 3, Prague 3, 130 00, Czech Republic",
   },
-  instagramHandle: "@pozitivfilms",
-  instagramUrl: "https://www.instagram.com/pozitivfilms/",
+  instagramHandle: "@pozitiv_films",
+  instagramUrl: "https://www.instagram.com/pozitiv_films/",
   contacts: [
     {
       name: "Klára Bukovská",
