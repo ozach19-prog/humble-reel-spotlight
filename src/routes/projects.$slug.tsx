@@ -2,6 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import { SectionLabel } from "@/components/SectionLabel";
+import { getProject } from "@/content/projects";
 import { copy } from "@/content/site";
 import { useContent } from "@/lib/content-store";
 import { useLang } from "@/lib/language";
