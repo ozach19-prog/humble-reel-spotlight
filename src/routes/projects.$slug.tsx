@@ -95,9 +95,11 @@ function ProjectDetail() {
               {liveCopy.synopsis[lang]}
             </h2>
             <div className="mt-4 space-y-4 leading-relaxed text-muted-foreground">
-              {project.synopsis.map((p) => (
-                <p key={p.en}>{p[lang]}</p>
-              ))}
+              {project.synopsis
+                .filter((p) => p[lang].trim().length > 1)
+                .map((p, i) => (
+                  <p key={i}>{p[lang]}</p>
+                ))}
             </div>
           </div>
           <div className="space-y-8">
