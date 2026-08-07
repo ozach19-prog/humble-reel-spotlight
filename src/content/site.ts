@@ -30,20 +30,18 @@ export const company = {
   ],
 };
 
-
 export const nav: { to: string; hash?: string; label: Bi }[] = [
   { to: "/projects", label: { cs: "Projekty", en: "Projects" } },
   { to: "/about", label: { cs: "O nás", en: "About" } },
   { to: "/", hash: "contact", label: { cs: "Kontakt", en: "Contact" } },
 ];
 
-
 export const copy = {
-  heroLine1: { cs: "Malý štáb.", en: "Small crew." },
-  heroLine2: { cs: "Skutečné příběhy.", en: "Real stories." },
+  heroLine1: { cs: "Máme rádi co děláme.", en: "We love what we do. " },
+  heroLine2: { cs: "Děláme jen to co máme rádi.", en: "We only do what we love." },
   heroText: {
-    cs: "Pozitiv Films je butiková produkční společnost z Prahy. Děláme dokumentární i hrané filmy — v počtu lidí, který nám dovolí zůstat u každého projektu až do konce.",
-    en: "Pozitiv Films is a boutique production company based in Prague. We make documentary and fiction films — with a team small enough to stay with every project to the end.",
+    cs: "Butique Produkce pro současný film a televizi",
+    en: "A boutique production company for contemporary film and television.",
   },
   heroAlt: {
     cs: "Kameraman snímá rozhovor v přirozeném světle",
@@ -87,7 +85,6 @@ export const copy = {
   labelInstagram: { cs: "Instagram", en: "Instagram" },
   labelWeb: { cs: "Web", en: "Web" },
 
-
   backToProjects: { cs: "Zpět na projekty", en: "Back to projects" },
   logline: { cs: "Logline", en: "Logline" },
   synopsis: { cs: "Synopse", en: "Synopsis" },
@@ -117,12 +114,7 @@ export const founders = [
         en: "(Placeholder text — send your own wording and I'll replace it.)",
       },
     ],
-    credits: [
-      "Mladá krev (2025)",
-      "Náhradníci (2024)",
-      "Marika (ve výrobě)",
-      "Čtyřhra (ve vývoji)",
-    ],
+    credits: ["Mladá krev (2025)", "Náhradníci (2024)", "Marika (ve výrobě)", "Čtyřhra (ve vývoji)"],
   },
   {
     name: "Ondřej Zach",
@@ -139,12 +131,6 @@ export const founders = [
         en: "(Placeholder text — send your own wording and I'll replace it.)",
       },
     ],
-    credits: [
-      "Mladá krev (2025)",
-      "Mladá krev II (ve výrobě)",
-      "Marika (ve výrobě)",
-      "Čtyřhra (ve vývoji)",
-    ],
+    credits: ["Mladá krev (2025)", "Mladá krev II (ve výrobě)", "Marika (ve výrobě)", "Čtyřhra (ve vývoji)"],
   },
 ];
-
