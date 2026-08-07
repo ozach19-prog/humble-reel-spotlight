@@ -58,12 +58,12 @@ export const copy = {
       en: "Pozitiv Films s.r.o. was established in 2023 with the aim to create a new space for quality auteur TV production. As its first project, it brought to fruition Náhradníci (The Substitutes) series (Alice Nellis, 2024), presented at Prima+ and the winner of the International Jury Award for the Best TV Project at 2025 Finále Plzeň festival. The series was co-directed by Jiří Havelka, who got the opportunity to develop his auteur project Kulturák (The Community Hall) in Pozitiv Films (development finished in 2025). As its second project, Pozitiv Films company finished sixteen-episode crime series Mladá Krev (Young Blood) in 2025 (screenplay by Alice Nellis, directed by Alice Nellis, Jasmina Blaževič and others), which became the most watched saturday prime time TV programme for most of the 2026 autumn season. Pozitiv Films is currently preparing its second season (production in 2027), and developing the series ČtyřHra (Doubles) in co-production with Czech Television (production 2027-2028).",
     },
     {
-      cs: "Děláme méně titulů a jsme u nich delší dobu — od prvního nápadu a vývoje látky až po dodání. U každého projektu je jeden z producentů od začátku do konce.",
-      en: "We make fewer titles and stay with them longer — from the first idea and script development all the way to delivery. On every project one of the producers is there from beginning to end.",
+      cs: "Děláme méně titulů a jsme u nich delší dobu — od prvního nápadu a vývoje látky až po postprodukci. ",
+      en: "We make fewer titles and stay with them longer — from the first idea and script development all the way to delivery. ",
     },
     {
-      cs: "Pracujeme v češtině i angličtině, na hraných sériích i celovečerních filmech, a nebráníme se tomu začít od hrubé myšlenky místo hotového zadání.",
-      en: "We work in Czech and English, on scripted series as well as feature films, and we're happy to start from a rough idea rather than a finished brief.",
+      cs: "",
+      en: "",
     },
   ],
 
