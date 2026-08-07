@@ -115,11 +115,11 @@ export const projects: Project[] = [
       },
       {
         cs: "Každá epizoda přináší nový případ, na jehož vyšetřování spolupracuje dvojice složená z mladého adepta a zkušeného profesionála. Děj se odehrává v Hradci, kde se velké kauzy mísí s lokální kriminalitou.",
-        en: "Each episode brings a new case investigated by a pair made up of a young recruit and an experienced professional. The story unfolds in Hradec, where major cases mix with small-town crime.",
+        en: "Each episode brings a new case investigated by a pair made up of a young recruit and an experienced professional. ",
       },
       {
         cs: "Epizodické případy propojuje větší ústřední záhada — nevyřešená vražda ženy zastřelené na břehu rybníka. Tato linka postupně odhaluje, že pachatel může být blíž, než si kdokoli myslí.",
-        en: "The episodic cases are threaded through a larger central mystery — the unsolved shooting of a woman on the bank of a pond. That storyline gradually reveals that the perpetrator may be closer than anyone thinks.",
+        en: "Major cases mix with small-town crime while the episodic storyline is threaded through a larger central mystery — the unsolved shooting of a woman on the bank of a pond. That storyline gradually reveals that the perpetrator may be closer than anyone thinks.",
       },
     ],
     credits: [
