@@ -142,7 +142,7 @@ export const projects: Project[] = [
     },
     externalLinks: [
       { label: { cs: "Kinobox", en: "Kinobox" }, url: "https://www.kinobox.cz/film/4871764-mlada-krev" },
-      { label: { cs: "ČSFD", en: "ČSFD" }, url: "https://www.csfd.cz/en/film/1714396-mlada-krev/prehled/" },
+      { label: { cs: "ČSFD", en: "ČSFD" }, url: "https://www.csfd.cz/en/film/1714396-mlada-krev/overview/" },
     ],
   },
 

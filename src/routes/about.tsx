@@ -46,7 +46,11 @@ function AboutPage() {
       <Header />
       <main className="mx-auto max-w-5xl px-6 py-16 sm:py-20">
         <SectionLabel>{copy.aboutTag[lang]}</SectionLabel>
-        <h1 className="mt-6 max-w-2xl text-3xl sm:text-5xl">{copy.aboutHeading[lang]}</h1>
+        {copy.aboutHeading[lang].trim() ? (
+          <h1 className="mt-6 max-w-2xl text-3xl sm:text-5xl">{copy.aboutHeading[lang]}</h1>
+        ) : (
+          <h1 className="sr-only">{copy.aboutTag[lang]}</h1>
+        )}
         <div className="mt-8 max-w-2xl space-y-4 leading-relaxed text-muted-foreground">
           {copy.aboutParagraphs
             .filter((p) => p[lang].trim().length > 1)
