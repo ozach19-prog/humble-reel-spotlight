@@ -139,12 +139,6 @@ export const founders = [
       },
     ],
 
-    credits: [
-      "Mladá krev II (ve výrobě)",
-      "Marika (ve výrobě)",
-      "Čtyřhra (ve vývoji)",
-      "Mladá krev (2025)",
-      "Náhradníci (2024)",
-    ],
+    credits: [] as string[],
   },
 ];
