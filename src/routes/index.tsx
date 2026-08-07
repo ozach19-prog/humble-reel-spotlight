@@ -86,8 +86,16 @@ function Home() {
 
         <section className="mx-auto max-w-5xl px-6 py-16 sm:py-24">
           <SectionLabel>{copy.aboutTag[lang]}</SectionLabel>
-          <div className="mt-8 grid gap-10 md:grid-cols-[1fr_1.2fr]">
-            <h2 className="text-2xl sm:text-3xl">{copy.aboutHeading[lang]}</h2>
+          <div
+            className={
+              copy.aboutHeading[lang].trim()
+                ? "mt-8 grid gap-10 md:grid-cols-[1fr_1.2fr]"
+                : "mt-8 max-w-3xl"
+            }
+          >
+            {copy.aboutHeading[lang].trim() ? (
+              <h2 className="text-2xl sm:text-3xl">{copy.aboutHeading[lang]}</h2>
+            ) : null}
             <div className="space-y-4 text-muted-foreground leading-relaxed">
               {copy.aboutParagraphs
                 .slice(0, 2)
@@ -172,9 +180,11 @@ function Home() {
           <div className="mx-auto grid max-w-5xl gap-10 px-6 py-16 sm:py-20 md:grid-cols-2">
             <div>
               <h2 className="text-2xl sm:text-3xl">{copy.contactHeading[lang]}</h2>
-              <p className="mt-4 max-w-md text-sm leading-relaxed opacity-80">
-                {copy.contactText[lang]}
-              </p>
+              {copy.contactText[lang].trim() ? (
+                <p className="mt-4 max-w-md text-sm leading-relaxed opacity-80">
+                  {copy.contactText[lang]}
+                </p>
+              ) : null}
             </div>
             <div className="space-y-8 font-[family-name:var(--font-display)] text-sm">
               <div className="grid gap-8 sm:grid-cols-2">

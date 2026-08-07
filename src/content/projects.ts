@@ -61,7 +61,7 @@ export const projects: Project[] = [
         en: "To avoid escalating agency costs that threaten to deplete their life savings, the couple strikes a deal directly with Mariam, devising an unconventional legal workaround: Otakar will divorce Eva and marry Mariam, ensuring that the child automatically receives Czech citizenship. They stage a fake marriage in Prague, Mariam returns to Georgia and soon sends back an ultrasound image proving the success of the entire operation. To keep the arrangement hidden from friends and Otakar's conservative mother, Olga, Eva begins to fake her own pregnancy, and everything seems to be going as planned.",
       },
       {
-        cs: "Ten se ale zhroutí, když se Mariam náhle na útěku před svým násilným partnerem Levanem bez ohlášení se objeví u Krásových  doma — s bříškem, velkým kufrem a oběma dcerami. Klidná domácnost se mění v přetlakový hrnec lží, kulturních střetů, skrytých identit a praktického chaosu. Když Levan Mariam v Praze vypátrá a začne Krásovy vydírat, vyjde najevo další tajemství o otcovství nenarozeného dítěte a Eva mezitím s překvapením zjistí, že je sama těhotná...",
+        cs: "Ten se ale zhroutí, když se Mariam náhle na útěku před svým násilným partnerem Levanem bez ohlášení se objeví u Krásových doma — s bříškem, velkým kufrem a oběma dcerami. Klidná domácnost se mění v přetlakový hrnec lží, kulturních střetů, skrytých identit a praktického chaosu. Když Levan Mariam v Praze vypátrá a začne Krásovy vydírat, vyjde najevo další tajemství o otcovství nenarozeného dítěte a Eva mezitím s překvapením zjistí, že je sama těhotná...",
         en: "The meticulous arrangement shatters when Mariam flees Tbilisi and her abusive partner Levan, and suddenly arrives unannounced at the Krásas' home with a baby bump, a large suitcase and both her biological children in tow. The once-quiet household quickly transforms into a pressure cooker of conflicting cultures, concealed identities and practical chaos. The situation escalates when Levan tracks Mariam to Prague and begins blackmailing the couple, threatening to expose their surrogacy solution — and Mariam reveals another secret that casts doubt on the unborn child's paternity. Meanwhile, Eva is astonished to discover that she is pregnant herself.",
       },
       {
@@ -115,11 +115,11 @@ export const projects: Project[] = [
       },
       {
         cs: "Každá epizoda přináší nový případ, na jehož vyšetřování spolupracuje dvojice složená z mladého adepta a zkušeného profesionála. Děj se odehrává v Hradci, kde se velké kauzy mísí s lokální kriminalitou.",
-        en: "Each episode brings a new case investigated by a pair made up of a young recruit and an experienced professional. ",
+        en: "Each episode brings a new case investigated by a pair made up of a young recruit and an experienced professional. The story is set in Hradec, where major cases mix with local crime.",
       },
       {
         cs: "Epizodické případy propojuje větší ústřední záhada — nevyřešená vražda ženy zastřelené na břehu rybníka. Tato linka postupně odhaluje, že pachatel může být blíž, než si kdokoli myslí.",
-        en: "Major cases mix with small-town crime while the episodic storyline is threaded through a larger central mystery — the unsolved shooting of a woman on the bank of a pond. That storyline gradually reveals that the perpetrator may be closer than anyone thinks.",
+        en: "The episodic cases are threaded through a larger central mystery — the unsolved shooting of a woman on the bank of a pond. That storyline gradually reveals that the perpetrator may be closer than anyone thinks.",
       },
     ],
     credits: [
@@ -142,7 +142,7 @@ export const projects: Project[] = [
     },
     externalLinks: [
       { label: { cs: "Kinobox", en: "Kinobox" }, url: "https://www.kinobox.cz/film/4871764-mlada-krev" },
-      { label: { cs: "ČSFD", en: "ČSFD" }, url: "https://www.csfd.cz/film/1714396-mlada-krev/prehled/" },
+      { label: { cs: "ČSFD", en: "ČSFD" }, url: "https://www.csfd.cz/en/film/1714396-mlada-krev/overview/" },
     ],
   },
 
@@ -168,7 +168,7 @@ export const projects: Project[] = [
       },
       {
         cs: "",
-        en: ".",
+        en: "",
       },
       {
         cs: "Kombinace kriminální zápletky s lehce komickým tónem připomíná Fargo, téma rodiny, jíž se vnější ohrožení stane katalyzátorem domácích vztahů, zase Ozark. Původní zločin, spáchaný vlastně z malichernosti, zatahuje obyčejný manželský pár do stále spletitější sítě lží, manipulací a dalších trestných činů — a boží mlýny melou pomalu, ale najisto.",
@@ -215,8 +215,8 @@ export const projects: Project[] = [
         en: "The continuation of the crime series about a generational clash inside a regional homicide unit. The investigators who were still finding their place in season one now carry responsibility of their own — and with it, mistakes they cannot pin on anyone else.",
       },
       {
-        cs: "Natáčení jaro 2027, TV premiéra tba",
-        en: "Shooting in  spring 2027, TV premiere in fall 2027",
+        cs: "Natáčení jaro 2027, TV premiéra TBA.",
+        en: "Shooting in spring 2027, TV premiere TBA.",
       },
     ],
     credits: [
@@ -264,7 +264,7 @@ export const projects: Project[] = [
       },
       {
         cs: "Ve vývoji: leden 2026 – prosinec 2026. ",
-        en: "In development: January 2026 – December 2026. Preproduction 2027, shooting 2027–2028 (68 shooting days), Czech Television premiere in autumn 2028.",
+        en: "In development: January 2026 – December 2026.",
       },
     ],
     credits: [
