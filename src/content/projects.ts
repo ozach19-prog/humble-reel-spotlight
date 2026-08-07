@@ -103,7 +103,7 @@ export const projects: Project[] = [
     status: "produced",
     year: "2025",
     format: { cs: "Kriminální série", en: "Crime series" },
-    length: { cs: "13 × 55 min", en: "13 × 55 min" },
+    length: { cs: "16 × 55 min", en: "13 × 55 min" },
     logline: {
       cs: "Na krajském oddělení vražd se energie a nové metody mladých adeptů střetávají s rutinou ostřílených kriminalistů — a všechny případy spojuje jedna nevyřešená vražda.",
       en: "At a regional homicide unit, the energy and fresh methods of young recruits collide with the routine of seasoned detectives — and every case is tied together by one unsolved murder.",
