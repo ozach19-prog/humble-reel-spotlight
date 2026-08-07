@@ -83,7 +83,7 @@ export const projects: Project[] = [
       },
       {
         role: roles.cast,
-        name: "Jana Plodková, Kryštof Hádek, Iva Janžurová, Mariam Khundadze, Zuzana Stivínová, Adam Ernest, Vica Kerekeš, Sára Arnsteinová, Julia Issa, Zuzana Čapková, Jitka Smutná, Jiří Bábek, Melania Melekishvili, Anastasia Alavidze, Lizi Liklikadze, Anastasia Lomtadze",
+        name: "Jana Plodková, Kryštof Hádek, Iva Janžurová, Mariam Khundadze, Zuzana Stivínová, Adam Ernest, Vica Kerekeš, Sára Arnsteinová, Julia Issa, Zuzana Čapková. ",
       },
     ],
     still: nahradniciStill.url,
