@@ -14,6 +14,8 @@ import { reportLovableError } from "../lib/lovable-error-reporting";
 import { LanguageProvider } from "../lib/language";
 import { ContentProvider, useContentEditor } from "../lib/content-store";
 import { ContentEditorSidebar, ContentEditorToggle } from "../components/ContentEditor";
+import { UpdatedIndicator } from "../components/UpdatedIndicator";
+
 
 
 
@@ -155,6 +157,8 @@ function EditableShell() {
       </div>
       <ContentEditorToggle />
       <ContentEditorSidebar />
+      <UpdatedIndicator />
+
     </>
   );
 }
