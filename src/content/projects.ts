@@ -215,8 +215,8 @@ export const projects: Project[] = [
         en: "The continuation of the crime series about a generational clash inside a regional homicide unit. The investigators who were still finding their place in season one now carry responsibility of their own — and with it, mistakes they cannot pin on anyone else.",
       },
       {
-        cs: "Natáčení 2026, televizní premiéra se připravuje.",
-        en: "Shooting in 2026, TV premiere in preparation.",
+        cs: "Natáčení jaro 2027, TV premiéra tba",
+        en: "Shooting in  spring 2027, TV premiere in fall 2027",
       },
     ],
     credits: [
