@@ -49,7 +49,7 @@ export const copy = {
   },
   aboutTag: { cs: "O nás", en: "About us" },
   aboutHeading: {
-    cs: "Držíme štáb malý. Záměrně.",
+    cs: "",
     en: "We keep the team small on purpose.",
   },
   aboutParagraphs: [
