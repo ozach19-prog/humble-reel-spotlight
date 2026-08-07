@@ -1,5 +1,6 @@
-import founder1 from "@/assets/founder-1.jpg";
+import klaraAsset from "@/assets/klara-bukovska.jpg.asset.json";
 import founder2 from "@/assets/founder-2.jpg";
+
 
 type Bi = { cs: string; en: string };
 
