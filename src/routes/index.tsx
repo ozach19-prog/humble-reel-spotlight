@@ -88,9 +88,12 @@ function Home() {
           <div className="mt-8 grid gap-10 md:grid-cols-[1fr_1.2fr]">
             <h2 className="text-2xl sm:text-3xl">{copy.aboutHeading[lang]}</h2>
             <div className="space-y-4 text-muted-foreground leading-relaxed">
-              {copy.aboutParagraphs.slice(0, 2).map((p) => (
-                <p key={p.en}>{p[lang]}</p>
-              ))}
+              {copy.aboutParagraphs
+                .slice(0, 2)
+                .filter((p) => p[lang].trim().length > 1)
+                .map((p, i) => (
+                  <p key={i}>{p[lang]}</p>
+                ))}
               <Link
                 to="/about"
                 className="inline-block font-[family-name:var(--font-display)] text-sm font-semibold text-foreground underline decoration-primary decoration-2 underline-offset-4"
