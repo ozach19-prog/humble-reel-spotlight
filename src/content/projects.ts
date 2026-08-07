@@ -270,7 +270,7 @@ export const projects: Project[] = [
     credits: [
       { role: roles.writer, name: "Alice Nellis" },
       { role: roles.director, name: "Alice Nellis, Jiří Havelka" },
-      { role: roles.production, name: "2028" },
+      { role: roles.production, name: "2027" },
       { role: roles.broadcaster, name: "Česká televize, ČT1 prime time, podzim 2028" },
     ],
     still: ctyrhraStill.url,
