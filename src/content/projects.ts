@@ -127,7 +127,7 @@ export const projects: Project[] = [
       { role: roles.director, name: "Alice Nellis, Jasmina Blaževič, Jaroslav Fuit, Jakub Machala" },
       {
         role: roles.producer,
-        name: "Klára Bukovská (Pozitiv Films), Ondřej Zach (Pozitiv Films), FTV Prima",
+        name: "Klára Bukovská (Pozitiv Films), Ondřej Zach (Pozitiv Films), Lucia Kršáková (FTV Prima), Lenka Hornová (FTV Prima).",
       },
       { role: roles.broadcaster, name: "FTV Prima, 2025" },
       {
