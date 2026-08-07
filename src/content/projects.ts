@@ -242,7 +242,7 @@ export const projects: Project[] = [
     format: { cs: "Dramedy ", en: "Dramedy series" },
     length: { cs: "8 × 52 min", en: "8 × 52 min" },
     logline: {
-      cs: "Slavní manželští terapeuti se ocitnou na hraně rozvodu, když se jim na prahu objeví nemanželská dcera jednoho z nich. Neochotně se o ni začnou starat, aby udrželi svou úspěšnou praxi — a nakonec je to právě problémová puberťačka, kdo jim pomůže zachránit vlastní vztah.",
+      cs: "Pár populárních manželských terapeutů na pokraji rozvodu se při snaze o udržení úspěšné praxe musí postarat o problémovou nemanželskou dceru jednoho z nich – aby nakonec zjistili, že je to ona, kdo se vztahy pomáhá jim.",
       en: "A pair of celebrity marriage therapists find themselves on the verge of divorce when the illegitimate daughter of one of them suddenly appears on their doorstep. Reluctantly, they resolve to take care of her in order to keep their successful practice afloat — only to discover that it is the troubled teenager who ultimately helps them save their own relationship.",
     },
     synopsis: [
