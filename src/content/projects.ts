@@ -103,7 +103,7 @@ export const projects: Project[] = [
     status: "produced",
     year: "2025",
     format: { cs: "Kriminální série", en: "Crime series" },
-    length: { cs: "16 × 55 min", en: "13 × 55 min" },
+    length: { cs: "16 × 55 min", en: "16 × 55 min" },
     logline: {
       cs: "Na krajském oddělení vražd se energie a nové metody mladých adeptů střetávají s rutinou ostřílených kriminalistů — a všechny případy spojuje jedna nevyřešená vražda.",
       en: "At a regional homicide unit, the energy and fresh methods of young recruits collide with the routine of seasoned detectives — and every case is tied together by one unsolved murder.",
@@ -204,7 +204,7 @@ export const projects: Project[] = [
     status: "production",
     year: "2026",
     format: { cs: "Kriminální série", en: "Crime series" },
-    length: { cs: "13 × 55 min", en: "8 × 55 min" },
+    length: { cs: "8 × 55 min", en: "8 × 55 min" },
     logline: {
       cs: "Druhá řada Mladé krve. Mladí kriminalisté už nejsou nováčci — a případy, které přicházejí, jsou osobnější než kdy dřív.",
       en: "The second season of Young Blood. The young detectives are no longer rookies — and the cases coming their way are more personal than ever.",
