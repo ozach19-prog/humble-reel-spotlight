@@ -155,20 +155,20 @@ export const projects: Project[] = [
     length: { cs: "8 × 55 min", en: "8 × 55 min" },
     logline: {
       cs: "Co uděláte s mrtvolou v garáži, když k vám přes plot koukají sousedi? A co uděláte se svým svědomím?",
-      en: "What do you do with a dead body in your garage when the neighbours are peering over the fence? And what do you do with your conscience?",
+      en: "What will you do with a dead body in your garage when the neighbors are peering over the fence? And what do you do with your conscience?",
     },
     synopsis: [
       {
-        cs: "Marika Vrbická (45) je běžná venkovská žena — má dům, zahradu, manžela, dospívající dceru, sousedy a kamarádky. A také žárlivý pocit, že by o to všechno mohla přijít, kdyby se její muž Hynek začal poohlížet po jiné. Aby znemožnila případnou nevěru, nadopuje ho před odjezdem na abiturientský večírek prášky na spaní. Tím spustí řetěz událostí, po nichž mají Vrbičtí v garáži v kufru auta mrtvolu manželky místního mafiána.",
-        en: "Marika Vrbická (45) is an ordinary woman in an ordinary village — a house, a garden, a husband, a teenage daughter, neighbours and friends. And a jealous fear that she could lose it all if her husband Hynek starts looking elsewhere. To rule out any infidelity before he leaves for his school reunion, she doses him with sleeping pills. That sets off a chain of events which leaves the Vrbickýs with the body of the local mobster's wife in the boot of a car in their garage.",
+        cs: "",
+        en: "",
       },
       {
-        cs: "Hynek totiž vezme naordinovaný štrůdl na večírek s sebou a podělí se o něj s bývalou spolužačkou Romanou, dnes manželkou místního realitního šíbra. Když ji pak veze domů, ve sněhové vánici havaruje. Marika je najde v bezvědomí, Romanu považuje za mrtvou a ze strachu z odhalení svého triku přesvědčí omámeného Hynka, že nehodu zavinil v opilosti a nesmí ji hlásit policii. Tělo naloží do kufru a nabourané auto skryjí v garáži.",
-        en: "Hynek takes the doctored apple strudel to the reunion and shares it with his former classmate Romana, now the wife of the local real-estate crook. Driving her home, he crashes in a snowstorm. Marika finds them unconscious, believes Romana is dead, and — terrified her trick will come to light — convinces the groggy Hynek that he caused the crash while drunk and must not call the police. Together they load the body into the boot and hide the wrecked car in the garage.",
+        cs: "",
+        en: "",
       },
       {
-        cs: "Romana se však v noci v kufru probere. Marika, sama pod vlivem prášků, se ji rozhodne odvézt do nemocnice, nastartuje — a usne. Výfukové plyny dokonají dílo. Ráno má Marika v garáži skutečnou mrtvolu a Hynka, který věří, že ji zabil on. Mezitím mafián hledá ženu u ruské konkurence, případ začíná vyšetřovat svérázná dvojice policistů, otec a syn Barošovi, domů na víkend přijíždí sedmnáctiletá dcera Julie a přes plot nakukuje zvídavá sousedka Hana.",
-        en: "But Romana wakes up in the boot during the night. Marika, herself under the influence of the pills, decides to drive her to hospital, starts the engine — and falls asleep. The exhaust fumes finish the job. By morning she really does have a corpse in the garage, and a husband convinced he killed her. Meanwhile the mobster hunts for his wife among his Russian rivals, an eccentric father-and-son police duo, the Barošes, take on the case, seventeen-year-old daughter Julie arrives home for the weekend, and the inquisitive neighbour Hana keeps peering over the fence.",
+        cs: "",
+        en: ".",
       },
       {
         cs: "Kombinace kriminální zápletky s lehce komickým tónem připomíná Fargo, téma rodiny, jíž se vnější ohrožení stane katalyzátorem domácích vztahů, zase Ozark. Původní zločin, spáchaný vlastně z malichernosti, zatahuje obyčejný manželský pár do stále spletitější sítě lží, manipulací a dalších trestných činů — a boží mlýny melou pomalu, ale najisto.",
