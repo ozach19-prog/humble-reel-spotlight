@@ -76,12 +76,12 @@ export const copy = {
   contactTag: { cs: "Kontakt", en: "Contact" },
   contactHeading: { cs: "Napište nám.", en: "Get in touch." },
   contactText: {
-    cs: "Napište nám, co máte v hlavě — i když je to jen jedna věta. Odpovídáme obvykle do dne.",
+    cs: "",
     en: "Tell us what you have in mind — even if it's just one sentence. We usually reply within a day.",
   },
   labelEmail: { cs: "E-mail", en: "Email" },
   labelPhone: { cs: "Telefon", en: "Phone" },
-  labelStudio: { cs: "Studio", en: "Studio" },
+  labelStudio: { cs: "Office:", en: "Office:" },
   labelInstagram: { cs: "Instagram", en: "Instagram" },
   labelWeb: { cs: "Web", en: "Web" },
 
