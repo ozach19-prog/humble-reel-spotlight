@@ -155,6 +155,8 @@ function EditableShell() {
       </div>
       <ContentEditorToggle />
       <ContentEditorSidebar />
+      <UpdatedIndicator />
+
     </>
   );
 }
