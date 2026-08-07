@@ -158,9 +158,6 @@ function Home() {
                 loading="lazy"
                 className="aspect-[4/3] w-full object-cover"
               />
-              <figcaption className="mt-3 font-[family-name:var(--font-display)] text-xs text-primary">
-                {lang === "cs" ? "Na place" : "On set"}
-              </figcaption>
             </figure>
           </div>
           <Link
