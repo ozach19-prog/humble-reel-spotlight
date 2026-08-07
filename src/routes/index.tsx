@@ -1,6 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import foundersAsset from "@/assets/founders.jpg.asset.json";
-import heroSet from "@/assets/hero-set.jpg";
+import heroAsset from "@/assets/hero-adepti.png.asset.json";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import { ProjectCard } from "@/components/ProjectCard";
@@ -75,10 +75,10 @@ function Home() {
 
         <section className="mx-auto max-w-5xl px-6">
           <img
-            src={heroSet}
+            src={heroAsset.url}
             alt={copy.heroAlt[lang]}
-            width={1600}
-            height={1008}
+            width={1280}
+            height={720}
             className="w-full object-cover"
           />
         </section>
