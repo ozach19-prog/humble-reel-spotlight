@@ -1,7 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
+import foundersAsset from "@/assets/founders.jpg.asset.json";
 import heroSet from "@/assets/hero-set.jpg";
 import { Footer } from "@/components/Footer";
-import { FounderCard } from "@/components/FounderCard";
 import { Header } from "@/components/Header";
 import { ProjectCard } from "@/components/ProjectCard";
 import { SectionLabel } from "@/components/SectionLabel";
