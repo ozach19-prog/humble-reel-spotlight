@@ -36,6 +36,7 @@ const roles = {
   costume: { cs: "Kostýmy", en: "Costume designer" },
   sound: { cs: "Zvuk", en: "Sound" },
   casting: { cs: "Casting", en: "Casting" },
+  production: { cs: "Výroba", en: "Produced by" },
 } as const;
 
 export const projects: Project[] = [
@@ -269,6 +270,7 @@ export const projects: Project[] = [
     credits: [
       { role: roles.writer, name: "Alice Nellis" },
       { role: roles.director, name: "Alice Nellis, Jiří Havelka" },
+      { role: roles.production, name: "Pozitiv Films" },
       { role: roles.broadcaster, name: "Česká televize, ČT1 prime time, podzim 2028" },
     ],
     still: ctyrhraStill.url,
