@@ -1,6 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import foundersAsset from "@/assets/founders.jpg.asset.json";
 import heroAsset from "@/assets/hero-adepti.png.asset.json";
+import monitorsAsset from "@/assets/monitors.jpg.asset.json";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import { ProjectCard } from "@/components/ProjectCard";
@@ -130,19 +131,38 @@ function Home() {
         <section className="mx-auto max-w-5xl px-6 py-16 sm:py-24">
           <SectionLabel>{copy.foundersTag[lang]}</SectionLabel>
           <h2 className="mt-6 text-2xl sm:text-3xl">{copy.foundersHeading[lang]}</h2>
-          <figure className="mt-8 max-w-2xl">
-            <img
-              src={foundersAsset.url}
-              alt={founders.map((f) => f.name).join(" & ")}
-              width={1440}
-              height={1920}
-              loading="lazy"
-              className="aspect-[4/3] w-full object-cover"
-            />
-            <figcaption className="mt-3 font-[family-name:var(--font-display)] text-xs text-primary">
-              {founders.map((f) => f.name).join(" & ")}
-            </figcaption>
-          </figure>
+          <div className="mt-8 grid gap-6 sm:grid-cols-2">
+            <figure>
+              <img
+                src={foundersAsset.url}
+                alt={founders.map((f) => f.name).join(" & ")}
+                width={1440}
+                height={1920}
+                loading="lazy"
+                className="aspect-[4/3] w-full object-cover"
+              />
+              <figcaption className="mt-3 font-[family-name:var(--font-display)] text-xs text-primary">
+                {founders.map((f) => f.name).join(" & ")}
+              </figcaption>
+            </figure>
+            <figure>
+              <img
+                src={monitorsAsset.url}
+                alt={
+                  lang === "cs"
+                    ? "Režijní monitory na natáčení"
+                    : "Director's monitors on set"
+                }
+                width={1600}
+                height={1200}
+                loading="lazy"
+                className="aspect-[4/3] w-full object-cover"
+              />
+              <figcaption className="mt-3 font-[family-name:var(--font-display)] text-xs text-primary">
+                {lang === "cs" ? "Na place" : "On set"}
+              </figcaption>
+            </figure>
+          </div>
           <Link
             to="/about"
             className="mt-8 inline-block font-[family-name:var(--font-display)] text-sm font-semibold underline decoration-primary decoration-2 underline-offset-4"
