@@ -1,8 +1,6 @@
 import klaraAsset from "@/assets/klara-bukovska.jpg.asset.json";
 import ondrejAsset from "@/assets/ondrej-zach.jpg.asset.json";
 
-
-
 type Bi = { cs: string; en: string };
 
 export const company = {
@@ -117,16 +115,12 @@ export const founders = [
       },
     ],
     credits: [
-      "Mladá krev II (ve výrobě)",
-      "Marika (ve výrobě)",
-      "Čtyřhra (ve vývoji)",
       "Mladá krev (2025)",
       "Náhradníci (2024)",
       "Sedmero krkavců (2015)",
       "Tmavomodrý svět (2000)",
       "Kolja (1997)",
     ],
-
   },
 
   {
@@ -156,5 +150,4 @@ export const founders = [
       "Náhradníci (2024)",
     ],
   },
-
 ];
