@@ -126,11 +126,11 @@ export const founders = [
     email: "klara.bukovska@pozitiv-films.cz",
     bio: [
       {
-        cs: "Klára Bukovská (nar. 1968) vystudovala produkci na FAMU a od 90. let pracuje jako producentka a vedoucí výroby na celovečerních filmech, seriálech a dokumentech. Spolupracovala na filmech Jana Svěráka (Kolja, Tmavomodrý svět) a dlouhodobě na projektech Alice Nellis.",
+        cs: "Klára Bukovská (nar. 1968) vystudovala produkci na FAMU a od 90. let pracuje jako producentka a vedoucí výroby na celovečerních filmech, seriálech a dokumentech české i zahraniční výroby. Spolupracovala na filmech Jana Svěráka (Kolja, Tmavomodrý svět) a dlouhodobě na projektech Alice Nellis.",
         en: "Klára Bukovská (b. 1968) graduated in production from FAMU and has worked since the 1990s as a producer and production manager on features, series and documentaries. She collaborated on Jan Svěrák's films (Kolya, Dark Blue World) and, over many years, on Alice Nellis's projects.",
       },
       {
-        cs: "V televizi stojí za sériemi pro TV Nova a FTV Prima. Od roku 2023 je producentkou Pozitiv Films — Náhradníci, Mladá krev, Mladá krev II, Marika a Čtyřhra.",
+        cs: "V televizi stojí za výrobou řady seriálů pro TV Nova a FTV Prima. ",
         en: "In television she is behind series for TV Nova and FTV Prima. Since 2023 she has been a producer at Pozitiv Films — Náhradníci, Mladá krev, Mladá krev II, Marika and Čtyřhra.",
       },
     ],
