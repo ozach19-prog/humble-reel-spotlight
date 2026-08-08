@@ -200,19 +200,19 @@ export const projects: Project[] = [
     synopsis: [
       {
         cs: "Pokračování kriminální série o generačním střetu na regionálním oddělení vražd. Vyšetřovatelé, kteří v první řadě teprve hledali své místo, teď nesou vlastní odpovědnost — a s ní i chyby, které se nedají svést na někoho jiného.",
-        en: "The continuation of the crime series about a generational clash inside a regional homicide unit. The investigators who were still finding their place in season one now carry responsibility of their own — and with it, mistakes they cannot pin on anyone else.",
+        en: "The continuation of the crime series about a generational clash inside a regional homicide unit. The young investigators are no longer novices, which brings new responsibility—and with it, mistakes they cannot pin on anyone else.",
       },
       {
         cs: "Natáčení jaro 2027, TV premiéra TBA.",
-        en: "Shooting in spring 2027, TV premiere TBA.",
+        en: "Development 2026",
       },
     ],
     credits: [
-      { role: roles.writer, name: "Alice Nellis" },
-      { role: roles.director, name: "Alice Nellis" },
+      { role: roles.writer, name: "Alice Nellis, Hana Cielová, Jan Dvořáček, Lucia Kajánková " },
+      { role: roles.director, name: "Alice Nellis, Jasmina Blaževič, Jakub Machala" },
       {
         role: roles.producer,
-        name: "Klára Bukovská, Ondřej Zach (Pozitiv Films s.r.o.)",
+        name: "Klára Bukovská, Ondřej Zach ",
       },
     ],
     still: mladaKrev2Still.url,
