@@ -37,10 +37,13 @@ export const nav: { to: string; hash?: string; label: Bi }[] = [
 ];
 
 export const copy = {
-  heroLine1: { cs: "Máme rádi co děláme.", en: "We love what we do. " },
-  heroLine2: { cs: "Děláme jen to co máme rádi.", en: "We only do what we love." },
+  heroLine1: { cs: "Pozitiv Films", en: "We love what we do. " },
+  heroLine2: {
+    cs: "Produkční společnost pro současnout televizi a film",
+    en: "We do only what we love.",
+  },
   heroText: {
-    cs: "Produkční společnost pro současný film a televizi",
+    cs: "Děláme jen to co máme rádi.",
     en: "A boutique production company for contemporary film and television.",
   },
   heroAlt: {
