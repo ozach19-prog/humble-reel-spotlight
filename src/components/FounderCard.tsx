@@ -24,7 +24,7 @@ export function FounderCard({ founder, full }: { founder: Founder; full?: boolea
       />
       <div className={full ? "" : "mt-3"}>
         <h3 className="text-lg">{founder.name}</h3>
-        <p className="font-[family-name:var(--font-display)] text-xs text-primary">
+        <p className="font-[family-name:var(--font-display)] text-xs text-primary-light">
           {founder.role[lang]}
         </p>
         {full && (
@@ -48,7 +48,7 @@ export function FounderCard({ founder, full }: { founder: Founder; full?: boolea
             )}
             <a
               href={`mailto:${founder.email}`}
-              className="mt-4 inline-block text-sm underline decoration-primary decoration-2 underline-offset-4"
+              className="mt-4 inline-block text-sm underline decoration-primary-light decoration-2 underline-offset-4"
             >
               {founder.email}
             </a>

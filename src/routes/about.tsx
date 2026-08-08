@@ -73,7 +73,7 @@ function AboutPage() {
           <p className="mt-1">
             <a
               href={`mailto:${company.email}`}
-              className="underline decoration-primary decoration-2 underline-offset-4"
+              className="underline decoration-primary-light decoration-2 underline-offset-4"
             >
               {company.email}
             </a>

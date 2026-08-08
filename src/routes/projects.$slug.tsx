@@ -49,7 +49,7 @@ function ProjectDetail() {
           <p className="mt-3 text-muted-foreground">{liveCopy.notFoundText[lang]}</p>
           <Link
             to="/projects"
-            className="mt-6 inline-block font-[family-name:var(--font-display)] text-sm font-semibold underline decoration-primary decoration-2 underline-offset-4"
+            className="mt-6 inline-block font-[family-name:var(--font-display)] text-sm font-semibold underline decoration-primary-light decoration-2 underline-offset-4"
           >
             {liveCopy.backToProjects[lang]}
           </Link>
@@ -66,7 +66,7 @@ function ProjectDetail() {
         <div className="mx-auto max-w-5xl px-6 pt-12 pb-8">
           <Link
             to="/projects"
-            className="font-[family-name:var(--font-display)] text-xs tracking-wide text-muted-foreground uppercase transition-colors hover:text-primary"
+            className="font-[family-name:var(--font-display)] text-xs tracking-wide text-muted-foreground uppercase transition-colors hover:text-primary-light"
           >
             ← {liveCopy.backToProjects[lang]}
           </Link>
@@ -156,7 +156,7 @@ function ProjectDetail() {
                         href={l.url}
                         target="_blank"
                         rel="noreferrer"
-                        className="underline decoration-primary decoration-2 underline-offset-4 transition-colors hover:text-primary"
+                        className="underline decoration-primary-light decoration-2 underline-offset-4 transition-colors hover:text-primary-light"
                       >
                         {l.label[lang]}
                       </a>

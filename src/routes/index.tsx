@@ -53,7 +53,7 @@ function Home() {
           <h1 className="max-w-2xl text-4xl leading-[1.1] sm:text-6xl">
             {copy.heroLine1[lang]}
             <br />
-            <span className="text-primary">{copy.heroLine2[lang]}</span>
+            <span className="text-primary-light">{copy.heroLine2[lang]}</span>
           </h1>
           <p className="mt-6 max-w-xl text-base leading-relaxed text-muted-foreground">
             {copy.heroText[lang]}
@@ -67,7 +67,7 @@ function Home() {
             </Link>
             <a
               href="#contact"
-              className="font-[family-name:var(--font-display)] text-sm font-semibold underline decoration-primary decoration-2 underline-offset-4"
+              className="font-[family-name:var(--font-display)] text-sm font-semibold underline decoration-primary-light decoration-2 underline-offset-4"
             >
               {copy.contactTag[lang]}
             </a>
@@ -105,7 +105,7 @@ function Home() {
                 ))}
               <Link
                 to="/about"
-                className="inline-block font-[family-name:var(--font-display)] text-sm font-semibold text-foreground underline decoration-primary decoration-2 underline-offset-4"
+                className="inline-block font-[family-name:var(--font-display)] text-sm font-semibold text-foreground underline decoration-primary-light decoration-2 underline-offset-4"
               >
                 {copy.aboutLink[lang]}
               </Link>
@@ -149,7 +149,7 @@ function Home() {
                 loading="lazy"
                 className="aspect-[4/3] w-full object-cover"
               />
-              <figcaption className="mt-3 font-[family-name:var(--font-display)] text-xs text-primary">
+              <figcaption className="mt-3 font-[family-name:var(--font-display)] text-xs text-primary-light">
                 {founders.map((f) => f.name).join(" & ")}
               </figcaption>
             </figure>
@@ -170,7 +170,7 @@ function Home() {
           </div>
           <Link
             to="/about"
-            className="mt-8 inline-block font-[family-name:var(--font-display)] text-sm font-semibold underline decoration-primary decoration-2 underline-offset-4"
+            className="mt-8 inline-block font-[family-name:var(--font-display)] text-sm font-semibold underline decoration-primary-light decoration-2 underline-offset-4"
           >
             {copy.aboutLink[lang]}
           </Link>
