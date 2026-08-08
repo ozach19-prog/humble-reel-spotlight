@@ -67,6 +67,23 @@ export const copy = {
     },
   ],
 
+  // Texts for the /about subpage — independent of the landing page block above.
+  aboutPageTag: { cs: "O nás", en: "About us" },
+  aboutPageHeading: {
+    cs: "",
+    en: "",
+  },
+  aboutPageParagraphs: [
+    {
+      cs: "Společnost Pozitiv Films s.r.o. vznikla v roce 2023 s cílem vytvořit nový prostor pro kvalitní autorskou televizní tvorbu. Jako první projekt realizovala seriál Náhradníci (Alice Nellis, 2024), uvedený na Prima +,. Seriál v roce 2025 získal na festivalu Finále Plzeň hlavní cenu mezinárodní poroty za nejlepší televizní projekt. Seriál spolurežíroval Jiří Havelka, který v Pozitiv Films získal příležitost rozvíjet svůj autorský projekt Kulturák (vývoj dokončen 2025). Jako svůj druhý projekt dokončila společnost Pozitiv Films v roce 2025 šestnáctidílný seriál Mladá krev (Scénář Alice Nellis, režie Alice Nellis, Jasmina Blaževič a další), který se stal v sobotním vysílání na TV Prima po většinu podzimní sezony 2026 nesledovanějším pořadem večera. V současnosti připravuje Pozitiv Films pro FTV Prima jeho druhou řadu (Mladá Krev II, realizace v roce 2027).",
+      en: "Pozitiv Films s.r.o. was established in 2023 with the aim to create a new space for quality auteur TV production. As its first project, it brought to fruition Náhradníci (The Substitutes) series (Alice Nellis, 2024), presented at Prima+ and the winner of the International Jury Award for the Best TV Project at 2025 Finále Plzeň festival. The series was co-directed by Jiří Havelka, who got the opportunity to develop his auteur project Kulturák (The Community Hall) in Pozitiv Films (development finished in 2025). As its second project, Pozitiv Films company finished sixteen-episode crime series Mladá Krev (Young Blood) in 2025 (screenplay by Alice Nellis, directed by Alice Nellis, Jasmina Blaževič and others), which became the most watched saturday prime time TV programme for most of the 2026 autumn season. Pozitiv Films is currently preparing its second season for FTV Prima (Mladá krev II, production in 2027).",
+    },
+    {
+      cs: "Děláme méně titulů a jsme u nich delší dobu — od prvního nápadu a vývoje látky až po postprodukci. ",
+      en: "We make fewer titles and stay with them longer — from the first idea and script development all the way to delivery. ",
+    },
+  ],
+
   aboutLink: { cs: "Více o nás", en: "More about us" },
   projectsTag: { cs: "Projekty", en: "Projects" },
   projectsHeading: { cs: "Na čem pracujeme", en: "What we're working on" },
