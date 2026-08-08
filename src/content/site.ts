@@ -150,11 +150,11 @@ export const founders = [
     email: "ondrej.zach@pozitiv-films.cz",
     bio: [
       {
-        cs: "Od začátku 90. let působí jako filmový kritik a kurátor — publikoval v měsíčníku Film a doba, v denním tisku a filmových časopisech a byl členem programového týmu MFF Karlovy Vary (1994–1998). Poté zastával vedoucí programové a manažerské pozice v TV Nova a HBO Europe (1996–2017), kde se podílel na vývoji a výrobě oceňované minisérie Hořící keř (Agnieszka Holland, 2013). Byl proděkanem FAMU pro mezinárodní vztahy a předsedou FAMU International (2017–2021) a v současnosti přednáší na Univerzitě Palackého v Olomouci.",
+        cs: "Od začátku 90. let působil jako filmový kritik a  byl členem programového týmu MFF Karlovy Vary (1994–1998). Poté zastával vedoucí programové a manažerské pozice v TV Nova a HBO Europe (1996–2017), kde se mj. Podílel se na vývoji a výrobě oceňované minisérie Hořící keř (Agnieszka Holland, 2013). Byl proděkanem FAMU pro mezinárodní vztahy a vedoucím katedry FAMU International (2017–2021) a v současnosti vyučuje na Katedře divadelních a filmových studií na Univerzitě Palackého v Olomouci.",
         en: "Since the early 1990s he has worked as a critic and curator, publishing in the monthly Film a doba, the daily press and film magazines, and serving on the programming team of the Karlovy Vary International Film Festival (1994–1998). He then held senior programming and management positions at TV Nova and HBO Europe (1996–2017), where he participated at development and production of the acclaimed miniseries Burning Bush (Agnieszka Holland, 2013). He served as Vice Dean for International Relations at FAMU and Chair of FAMU International (2017–2021), and currently teaches at Palacký University in Olomouc.",
       },
       {
-        cs: "V letech 2018–2022 byl členem Rady Státního fondu kinematografie. Je členem České filmové a televizní akademie. Od roku 2022 je spolumajitelem a výkonným producentem Pozitiv Films.",
+        cs: "V letech 2018–2022 byl členem Rady Státního fondu kinematografie. Je členem České filmové a televizní akademie. ",
         en: "From 2018 to 2022 he served on the Board of the Czech Film Fund. He is a member of the Czech Film and Television Academy. Since 2022 he has been co-owner and executive producer of Pozitiv Films.",
       },
     ],
