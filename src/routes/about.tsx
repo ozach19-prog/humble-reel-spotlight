@@ -45,14 +45,14 @@ function AboutPage() {
     <div className="min-h-screen bg-background">
       <Header />
       <main className="mx-auto max-w-5xl px-6 py-16 sm:py-20">
-        <SectionLabel>{copy.aboutTag[lang]}</SectionLabel>
-        {copy.aboutHeading[lang].trim() ? (
-          <h1 className="mt-6 max-w-2xl text-3xl sm:text-5xl">{copy.aboutHeading[lang]}</h1>
+        <SectionLabel>{copy.aboutPageTag[lang]}</SectionLabel>
+        {copy.aboutPageHeading[lang].trim() ? (
+          <h1 className="mt-6 max-w-2xl text-3xl sm:text-5xl">{copy.aboutPageHeading[lang]}</h1>
         ) : (
-          <h1 className="sr-only">{copy.aboutTag[lang]}</h1>
+          <h1 className="sr-only">{copy.aboutPageTag[lang]}</h1>
         )}
         <div className="mt-8 max-w-2xl space-y-4 leading-relaxed text-muted-foreground">
-          {copy.aboutParagraphs
+          {copy.aboutPageParagraphs
             .filter((p) => p[lang].trim().length > 1)
             .map((p, i) => (
               <p key={i}>{p[lang]}</p>
