@@ -99,7 +99,7 @@ export const projects: Project[] = [
 
   {
     slug: "mlada-krev",
-    title: "Mladá krev",
+    title: "Young Blood (Mladá krev)",
     status: "produced",
     year: "2025",
     format: { cs: "Kriminální série", en: "Crime series" },
