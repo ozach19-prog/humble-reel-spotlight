@@ -151,7 +151,7 @@ export const projects: Project[] = [
     title: "Marika",
     status: "production",
     year: "2027",
-    format: { cs: "Venkovský thriller", en: "Rural thriller" },
+    format: { cs: "Venkovský thriller", en: "Crime Drama" },
     length: { cs: "8 × 55 min", en: "8 × 55 min" },
     logline: {
       cs: "Co uděláte s mrtvolou v garáži, když k vám přes plot koukají sousedi? A co uděláte se svým svědomím?",
@@ -159,24 +159,12 @@ export const projects: Project[] = [
     },
     synopsis: [
       {
-        cs: "",
-        en: "",
-      },
-      {
-        cs: "",
-        en: "",
-      },
-      {
-        cs: "",
-        en: "",
-      },
-      {
         cs: "Kombinace kriminální zápletky s lehce komickým tónem připomíná Fargo, téma rodiny, jíž se vnější ohrožení stane katalyzátorem domácích vztahů, zase Ozark. Původní zločin, spáchaný vlastně z malichernosti, zatahuje obyčejný manželský pár do stále spletitější sítě lží, manipulací a dalších trestných činů — a boží mlýny melou pomalu, ale najisto.",
         en: "The crime plot with its lightly comic tone recalls Fargo, while the theme of a family for whom an outside threat becomes the catalyst of its own domestic reckoning echoes Ozark. An original crime, committed out of sheer pettiness, pulls an ordinary married couple into an ever more tangled web of lies, manipulation and further offences — and the mills of God grind slowly, but they grind sure.",
       },
       {
-        cs: "Preprodukce jaro–léto 2026, natáčení září–prosinec 2026, postprodukce a zimní dotáčky leden–březen 2027, televizní premiéra na jaře 2027.",
-        en: "Preproduction spring–summer 2026, shooting September–December 2026, postproduction and winter pick-ups January–March 2027, TV premiere in spring 2027.",
+        cs: "Realizace podzim 2027 - Jaro 2028",
+        en: "Production September 2026 - March 2027 ",
       },
     ],
     credits: [
