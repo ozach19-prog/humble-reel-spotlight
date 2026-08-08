@@ -16,7 +16,7 @@ export function Header() {
             alt="Pozitiv Films"
             width={174}
             height={87}
-            className="h-9 w-auto"
+            className="h-9 w-auto brightness-0 invert"
           />
         </Link>
         <div className="flex shrink-0 items-center gap-5 font-[family-name:var(--font-display)] text-sm">
