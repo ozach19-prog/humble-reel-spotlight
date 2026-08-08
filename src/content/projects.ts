@@ -53,15 +53,15 @@ export const projects: Project[] = [
     },
     synopsis: [
       {
-        cs: "Po deseti letech neúspěšných pokusů o početí se Eva a Otakar Krásovi rozhodnou pro náhradní mateřství. Specializovaná agentura v Gruzii jim najde Mariam — mladou, inteligentní matku dvou dcer, pro kterou je náhradní mateřství šancí uniknout z tíživé životní situace.",
+        cs: "Po deseti letech neúspěšných pokusů o početí se Eva a Otakar Krásovi rozhodnou pro náhradní mateřství. Specializovaná agentura v Gruzii jim najde Mariam — mladou, inteligentní matku dvou dcer, pro kterou je tato \"zakázka\" šancí uniknout z tíživé životní situace.",
         en: "After a decade of unsuccessful attempts at natural and assisted conception, Eva and Otakar Krása turn to surrogacy as their last resort to start a family. Due to the legal ambiguity of surrogate motherhood in the Czech Republic, they seek the help of an agency in Georgia. There, they discover Mariam, a young, intelligent single mother of two beautiful daughters for whom surrogacy represents a chance to escape her dire living conditions.",
       },
       {
-        cs: "Aby se vyhnuli právní neukotvenosti náhradního manželství v Česku, vymyslí Krásovi neortodoxní právní kličku: Otakar se rozvede s Evou a vezme si Mariam, takže dítě automaticky získá české občanství. V Praze sehrají fingovanou svatbu, Mariam se vrátí do Gruzie a zakrátko jim emailem pošle ultrazvuk budoucího potomka. Eva začne před přáteli a konzervativní tchyní Olgou předstírat těhotenství a vše se zdá jít podle plánu.",
+        cs: "Aby se vyhnuli právní neukotvenosti náhradního mateřství v Česku, vymyslí Krásovi neortodoxní právní kličku: Otakar se rozvede s Evou a vezme si Mariam, takže dítě automaticky získá české občanství. V Praze sehrají fingovanou svatbu, Mariam se vrátí do Gruzie a zakrátko jim emailem pošle ultrazvuk budoucího potomka. Eva začne před přáteli a konzervativní tchyní Olgou předstírat těhotenství a vše se zdá jít podle plánu.",
         en: "To avoid escalating agency costs that threaten to deplete their life savings, the couple strikes a deal directly with Mariam, devising an unconventional legal workaround: Otakar will divorce Eva and marry Mariam, ensuring that the child automatically receives Czech citizenship. They stage a fake marriage in Prague, Mariam returns to Georgia and soon sends back an ultrasound image proving the success of the entire operation. To keep the arrangement hidden from friends and Otakar's conservative mother, Olga, Eva begins to fake her own pregnancy, and everything seems to be going as planned.",
       },
       {
-        cs: "Ten se ale zhroutí, když se Mariam náhle na útěku před svým násilným partnerem Levanem bez ohlášení se objeví u Krásových doma — s bříškem, velkým kufrem a oběma dcerami. Klidná domácnost se mění v přetlakový hrnec lží, kulturních střetů, skrytých identit a praktického chaosu. Když Levan Mariam v Praze vypátrá a začne Krásovy vydírat, vyjde najevo další tajemství o otcovství nenarozeného dítěte a Eva mezitím s překvapením zjistí, že je sama těhotná...",
+        cs: "Ten se ale zhroutí, když se Mariam náhle na útěku před násilným partnerem bez ohlášení objeví u Krásových doma — s bříškem, velkým kufrem a oběma dcerami. Dosud klidná domácnost se mění v přetlakový hrnec lží, kulturních střetů a skrytých identit. Když  Mariam v Praze její gruzínský partner vypátrá a začne Krásovy vydírat, vyjde najevo další tajemství o otcovství nenarozeného dítěte a  Eva mezitím s překvapením zjistí, že je sama těhotná...",
         en: "The meticulous arrangement shatters when Mariam flees Tbilisi and her abusive partner Levan, and suddenly arrives unannounced at the Krásas' home with a baby bump, a large suitcase and both her biological children in tow. The once-quiet household quickly transforms into a pressure cooker of conflicting cultures, concealed identities and practical chaos. The situation escalates when Levan tracks Mariam to Prague and begins blackmailing the couple, threatening to expose their surrogacy solution — and Mariam reveals another secret that casts doubt on the unborn child's paternity. Meanwhile, Eva is astonished to discover that she is pregnant herself.",
       },
       {
@@ -99,7 +99,7 @@ export const projects: Project[] = [
 
   {
     slug: "mlada-krev",
-    title: "Mladá krev",
+    title: "Young Blood (Mladá krev)",
     status: "produced",
     year: "2025",
     format: { cs: "Kriminální série", en: "Crime series" },
@@ -151,7 +151,7 @@ export const projects: Project[] = [
     title: "Marika",
     status: "production",
     year: "2027",
-    format: { cs: "Venkovský thriller", en: "Rural thriller" },
+    format: { cs: "Venkovský thriller", en: "Crime Drama" },
     length: { cs: "8 × 55 min", en: "8 × 55 min" },
     logline: {
       cs: "Co uděláte s mrtvolou v garáži, když k vám přes plot koukají sousedi? A co uděláte se svým svědomím?",
@@ -159,24 +159,12 @@ export const projects: Project[] = [
     },
     synopsis: [
       {
-        cs: "",
-        en: "",
-      },
-      {
-        cs: "",
-        en: "",
-      },
-      {
-        cs: "",
-        en: "",
-      },
-      {
         cs: "Kombinace kriminální zápletky s lehce komickým tónem připomíná Fargo, téma rodiny, jíž se vnější ohrožení stane katalyzátorem domácích vztahů, zase Ozark. Původní zločin, spáchaný vlastně z malichernosti, zatahuje obyčejný manželský pár do stále spletitější sítě lží, manipulací a dalších trestných činů — a boží mlýny melou pomalu, ale najisto.",
         en: "The crime plot with its lightly comic tone recalls Fargo, while the theme of a family for whom an outside threat becomes the catalyst of its own domestic reckoning echoes Ozark. An original crime, committed out of sheer pettiness, pulls an ordinary married couple into an ever more tangled web of lies, manipulation and further offences — and the mills of God grind slowly, but they grind sure.",
       },
       {
-        cs: "Preprodukce jaro–léto 2026, natáčení září–prosinec 2026, postprodukce a zimní dotáčky leden–březen 2027, televizní premiéra na jaře 2027.",
-        en: "Preproduction spring–summer 2026, shooting September–December 2026, postproduction and winter pick-ups January–March 2027, TV premiere in spring 2027.",
+        cs: "Realizace podzim 2027 - Jaro 2028",
+        en: "Production September 2026 - March 2027 ",
       },
     ],
     credits: [
@@ -189,7 +177,7 @@ export const projects: Project[] = [
       { role: roles.casting, name: "Madla Zachariášová, Jam Casting" },
       {
         role: roles.producer,
-        name: "Klára Bukovská, Ondřej Zach (Pozitiv Films s.r.o.)",
+        name: "Klára Bukovská, Ondřej Zach ",
       },
     ],
     still: marikaStill.url,
@@ -212,19 +200,19 @@ export const projects: Project[] = [
     synopsis: [
       {
         cs: "Pokračování kriminální série o generačním střetu na regionálním oddělení vražd. Vyšetřovatelé, kteří v první řadě teprve hledali své místo, teď nesou vlastní odpovědnost — a s ní i chyby, které se nedají svést na někoho jiného.",
-        en: "The continuation of the crime series about a generational clash inside a regional homicide unit. The investigators who were still finding their place in season one now carry responsibility of their own — and with it, mistakes they cannot pin on anyone else.",
+        en: "The continuation of the crime series about a generational clash inside a regional homicide unit. The young investigators are no longer novices, which brings new responsibility—and with it, mistakes they cannot pin on anyone else.",
       },
       {
         cs: "Natáčení jaro 2027, TV premiéra TBA.",
-        en: "Shooting in spring 2027, TV premiere TBA.",
+        en: "Development 2026",
       },
     ],
     credits: [
-      { role: roles.writer, name: "Alice Nellis" },
-      { role: roles.director, name: "Alice Nellis" },
+      { role: roles.writer, name: "Alice Nellis, Hana Cielová, Jan Dvořáček, Lucia Kajánková " },
+      { role: roles.director, name: "Alice Nellis, Jasmina Blaževič, Jakub Machala" },
       {
         role: roles.producer,
-        name: "Klára Bukovská, Ondřej Zach (Pozitiv Films s.r.o.)",
+        name: "Klára Bukovská, Ondřej Zach ",
       },
     ],
     still: mladaKrev2Still.url,
@@ -270,8 +258,8 @@ export const projects: Project[] = [
     credits: [
       { role: roles.writer, name: "Alice Nellis" },
       { role: roles.director, name: "Alice Nellis, Jiří Havelka" },
-      { role: roles.production, name: "2027" },
-      { role: roles.broadcaster, name: "Česká televize, ČT1 prime time, podzim 2028" },
+      { role: { cs: "Realizace", en: "Production" }, name: "2027-2028" },
+      { role: { cs: "", en: "Premiere" }, name: "TBD" },
     ],
     still: ctyrhraStill.url,
     stillAlt: {
