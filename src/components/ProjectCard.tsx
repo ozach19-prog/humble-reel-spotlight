@@ -24,7 +24,7 @@ export function ProjectCard({ project }: { project: Project }) {
         />
       </div>
       <div className="mt-3 flex items-baseline justify-between gap-3">
-        <h3 className="min-w-0 truncate text-lg group-hover:text-primary">
+        <h3 className="min-w-0 truncate text-lg group-hover:text-primary-light">
           {project.title}
         </h3>
         <span className="shrink-0 text-xs text-muted-foreground">

@@ -110,7 +110,7 @@ export function ContentEditorSidebar() {
               <button
                 type="button"
                 onClick={() => setOpenGroup(open ? null : group.id)}
-                className="flex w-full items-center justify-between gap-2 px-4 py-3 text-left font-[family-name:var(--font-display)] text-xs font-semibold tracking-wide uppercase transition-colors hover:text-primary"
+                className="flex w-full items-center justify-between gap-2 px-4 py-3 text-left font-[family-name:var(--font-display)] text-xs font-semibold tracking-wide uppercase transition-colors hover:text-primary-light"
               >
                 <span>{group.title}</span>
                 <span className="text-muted-foreground">{open ? "–" : "+"}</span>
@@ -129,7 +129,7 @@ export function ContentEditorSidebar() {
                               type="button"
                               onClick={() => resetField(field.path)}
                               title="Vrátit původní text"
-                              className="flex shrink-0 items-center gap-1 text-primary"
+                              className="flex shrink-0 items-center gap-1 text-primary-light"
                             >
                               <RotateCcw className="h-3 w-3" />
                               zpět
@@ -197,7 +197,7 @@ export function ContentEditorSidebar() {
             onClick={() => {
               if (window.confirm("Vrátit všechny texty do původního stavu?")) resetAll();
             }}
-            className="border border-input px-3 py-2 font-[family-name:var(--font-display)] text-xs font-semibold transition-colors hover:border-primary hover:text-primary"
+            className="border border-input px-3 py-2 font-[family-name:var(--font-display)] text-xs font-semibold transition-colors hover:border-primary-light hover:text-primary-light"
           >
             Vše zpět
           </button>

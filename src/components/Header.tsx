@@ -26,8 +26,8 @@ export function Header() {
                 key={item.label.en}
                 to={item.to}
                 {...(item.hash ? { hash: item.hash } : {})}
-                className="transition-colors hover:text-primary"
-                activeProps={{ className: item.hash ? "" : "text-primary" }}
+                className="transition-colors hover:text-primary-light"
+                activeProps={{ className: item.hash ? "" : "text-primary-light" }}
               >
                 {item.label[lang]}
               </Link>
@@ -43,7 +43,7 @@ export function Header() {
                 aria-pressed={lang === code}
                 className={
                   lang === code
-                    ? "px-1 font-semibold text-primary uppercase"
+                    ? "px-1 font-semibold text-primary-light uppercase"
                     : "px-1 text-muted-foreground uppercase transition-colors hover:text-foreground"
                 }
               >

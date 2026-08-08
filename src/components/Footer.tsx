@@ -12,7 +12,7 @@ export function Footer() {
           © {new Date().getFullYear()} {company.legalName}
         </p>
         <p className="sm:text-right">
-          <a href={`mailto:${company.email}`} className="hover:text-primary">
+          <a href={`mailto:${company.email}`} className="hover:text-primary-light">
             {company.email}
           </a>
           {" · "}
@@ -20,7 +20,7 @@ export function Footer() {
             href={company.instagramUrl}
             target="_blank"
             rel="noreferrer noopener"
-            className="hover:text-primary"
+            className="hover:text-primary-light"
           >
             Instagram
           </a>
