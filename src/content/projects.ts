@@ -53,7 +53,7 @@ export const projects: Project[] = [
     },
     synopsis: [
       {
-        cs: "Po deseti letech neúspěšných pokusů o početí se Eva a Otakar Krásovi rozhodnou pro náhradní mateřství. Specializovaná agentura v Gruzii jim najde Mariam — mladou, inteligentní matku dvou dcer, pro kterou je náhradní mateřství šancí uniknout z tíživé životní situace.",
+        cs: "Po deseti letech neúspěšných pokusů o početí se Eva a Otakar Krásovi rozhodnou pro náhradní mateřství. Specializovaná agentura v Gruzii jim najde Mariam — mladou, inteligentní matku dvou dcer, pro kterou je tato \"zakázka\" šancí uniknout z tíživé životní situace.",
         en: "After a decade of unsuccessful attempts at natural and assisted conception, Eva and Otakar Krása turn to surrogacy as their last resort to start a family. Due to the legal ambiguity of surrogate motherhood in the Czech Republic, they seek the help of an agency in Georgia. There, they discover Mariam, a young, intelligent single mother of two beautiful daughters for whom surrogacy represents a chance to escape her dire living conditions.",
       },
       {
