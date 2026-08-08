@@ -182,3 +182,11 @@
   clip-path: polygon(0 0, 100% 0, calc(100% - 0.9rem) 100%, 0 100%);
 }
 
+
+@layer base {
+  /* Visible keyboard focus with sufficient contrast against dark surfaces */
+  :focus-visible {
+    outline: 2px solid var(--primary-light);
+    outline-offset: 2px;
+  }
+}
