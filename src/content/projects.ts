@@ -177,7 +177,7 @@ export const projects: Project[] = [
       { role: roles.casting, name: "Madla Zachariášová, Jam Casting" },
       {
         role: roles.producer,
-        name: "Klára Bukovská, Ondřej Zach (Pozitiv Films s.r.o.)",
+        name: "Klára Bukovská, Ondřej Zach ",
       },
     ],
     still: marikaStill.url,
