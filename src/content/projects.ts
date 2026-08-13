@@ -189,7 +189,7 @@ export const projects: Project[] = [
   {
     slug: "mlada-krev-ii",
     title: "Mladá krev II",
-    status: "production",
+    status: "development",
     year: "2027",
     format: { cs: "Kriminální série", en: "Crime series" },
     length: { cs: "8 × 55 min", en: "8 × 55 min" },
@@ -203,8 +203,8 @@ export const projects: Project[] = [
         en: "The continuation of the crime series about a generational clash inside a regional homicide unit. The young investigators are no longer novices, which brings new responsibility—and with it, mistakes they cannot pin on anyone else.",
       },
       {
-        cs: "Natáčení jaro 2027, TV premiéra TBA.",
-        en: "Development 2026",
+        cs: "Ve vývoji: 2026.",
+        en: "In development: 2026.",
       },
     ],
     credits: [
