@@ -138,7 +138,7 @@ function buildGroups(content: ContentShape): EditableGroup[] {
     push(`founder-${i}`, `Zakladatel / Founder — ${founder.name}`, founder, `founders.${i}`);
   });
   content.projects.forEach((project, i) => {
-    push(`project-${project.slug}`, `Projekt / Project — ${project.title}`, project, `projects.${i}`);
+    push(`project-${project.slug}`, `Projekt / Project — ${project.title.cs}`, project, `projects.${i}`);
   });
 
   return groups;

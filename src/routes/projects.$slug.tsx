@@ -10,7 +10,7 @@ import { useLang } from "@/lib/language";
 export const Route = createFileRoute("/projects/$slug")({
   head: ({ params }) => {
     const project = getProject(params.slug);
-    const title = project ? `${project.title} — Pozitiv Films` : "Projekt — Pozitiv Films";
+    const title = project ? `${project.title.cs} — Pozitiv Films` : "Projekt — Pozitiv Films";
     const description = project ? project.logline.cs : copy.notFoundText.cs;
     return {
       meta: [
@@ -73,7 +73,7 @@ function ProjectDetail() {
           <div className="mt-6">
             <SectionLabel>{statusShort[project.status][lang]}</SectionLabel>
           </div>
-          <h1 className="mt-6 text-4xl sm:text-6xl">{project.title}</h1>
+          <h1 className="mt-6 text-4xl sm:text-6xl">{project.title[lang]}</h1>
           <p className="mt-4 max-w-2xl text-lg leading-relaxed text-muted-foreground">
             {project.logline[lang]}
           </p>

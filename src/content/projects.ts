@@ -10,7 +10,7 @@ type Bi = { cs: string; en: string };
 
 export type Project = {
   slug: string;
-  title: string;
+  title: Bi;
   status: ProjectStatus;
   year: string;
   format: Bi;
