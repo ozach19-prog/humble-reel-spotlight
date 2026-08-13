@@ -42,7 +42,7 @@ const roles = {
 export const projects: Project[] = [
   {
     slug: "nahradnici",
-    title: { cs: "Náhradníci", en: "Náhradníci" },
+    title: { cs: "Náhradníci", en: "Substitutes (Náhradníci)" },
     status: "produced",
     year: "2024",
     format: { cs: "Komediální seriál", en: "Comedy series" },
@@ -99,7 +99,7 @@ export const projects: Project[] = [
 
   {
     slug: "mlada-krev",
-    title: { cs: "Mladá krev", en: "Mladá krev" },
+    title: { cs: "Mladá krev", en: "Young Blood (Mladá krev)" },
     status: "produced",
     year: "2025",
     format: { cs: "Kriminální seriál", en: "Crime series" },
@@ -148,7 +148,7 @@ export const projects: Project[] = [
 
   {
     slug: "marika",
-    title: { cs: "Marika", en: "Marika" },
+    title: { cs: "Marika", en: "Marika (working title)" },
     status: "production",
     year: "2027",
     format: { cs: "Venkovský thriller", en: "Crime Drama" },
@@ -188,7 +188,7 @@ export const projects: Project[] = [
   },
   {
     slug: "mlada-krev-ii",
-    title: { cs: "Mladá krev II", en: "Mladá krev II" },
+    title: { cs: "Mladá krev II", en: "Young Blood II (Mladá krev II)" },
     status: "development",
     year: "2027",
     format: { cs: "Kriminální série", en: "Crime series" },
