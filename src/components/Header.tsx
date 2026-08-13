@@ -34,23 +34,30 @@ export function Header() {
 
             ))}
           </nav>
-          <div className="flex items-center gap-1 border-l border-border pl-4 text-xs">
+          <div
+            role="group"
+            aria-label={lang === "cs" ? "Jazyk / Language" : "Language"}
+            className="flex shrink-0 items-center overflow-hidden rounded-full border border-border"
+          >
             {(["cs", "en"] as const).map((code) => (
               <button
                 key={code}
                 type="button"
                 onClick={() => setLang(code)}
                 aria-pressed={lang === code}
+                title={code === "cs" ? "Čeština" : "English"}
                 className={
-                  lang === code
-                    ? "px-1 font-semibold text-primary-light uppercase"
-                    : "px-1 text-muted-foreground uppercase transition-colors hover:text-foreground"
+                  "px-3 py-1 text-xs font-semibold uppercase tracking-wider transition-colors " +
+                  (lang === code
+                    ? "bg-primary text-primary-foreground"
+                    : "text-muted-foreground hover:text-foreground")
                 }
               >
                 {code}
               </button>
             ))}
           </div>
+
         </div>
       </div>
     </header>
