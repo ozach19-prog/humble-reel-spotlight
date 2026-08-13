@@ -127,20 +127,14 @@ export const founders = [
     bio: [
       {
         cs: "Klára Bukovská (nar. 1968) vystudovala produkci na FAMU a od 90. let pracuje jako producentka a vedoucí výroby na celovečerních filmech, seriálech a dokumentech české i zahraniční výroby. Spolupracovala na filmech Jana Svěráka (Kolja, Tmavomodrý svět) a dlouhodobě na projektech Alice Nellis.",
-        en: "Klára Bukovská (b. 1968) graduated in production from FAMU and has worked since the 1990s as a producer and production manager on features, series and documentaries. She collaborated on Jan Svěrák's films (Kolya, Dark Blue World) and, over many years, on Alice Nellis's projects.",
+        en: "Klára Bukovská (b. 1968) graduated in production from FAMU and has worked since the 1990s as a production manager, line producer and producer on features, series and documentaries. She collaborated on Jan Svěrák's films (Kolya, Dark Blue World) and, over many years, on several Alice Nellis's projects.",
       },
       {
         cs: "V televizi stojí za výrobou řady seriálů pro TV Nova a FTV Prima. ",
-        en: "In television she is behind series for TV Nova and FTV Prima. Since 2023 she has been a producer at Pozitiv Films — Náhradníci, Mladá krev, Mladá krev II, Marika and Čtyřhra.",
+        en: "In television, she produced numerous series for TV Nova and FTV Prima. ",
       },
     ],
-    credits: [
-      "Mladá krev (2025)",
-      "Náhradníci (2024)",
-      "Sedmero krkavců (2015)",
-      "Tmavomodrý svět (2000)",
-      "Kolja (1997)",
-    ],
+    credits: [] as string[],
   },
 
   {
@@ -150,7 +144,7 @@ export const founders = [
     email: "ondrej.zach@pozitiv-films.cz",
     bio: [
       {
-        cs: "Od začátku 90. let působil jako filmový kritik a  byl členem programového týmu MFF Karlovy Vary (1994–1998). Poté zastával vedoucí programové a manažerské pozice v TV Nova a HBO Europe (1996–2017), kde se mj. Podílel se na vývoji a výrobě oceňované minisérie Hořící keř (Agnieszka Holland, 2013). Byl proděkanem FAMU pro mezinárodní vztahy a vedoucím katedry FAMU International (2017–2021) a v současnosti vyučuje na Katedře divadelních a filmových studií na Univerzitě Palackého v Olomouci.",
+        cs: "Od začátku 90. let působil jako filmový kritik a  byl členem programového týmu MFF Karlovy Vary (1994–1998). Poté zastával vedoucí programové a manažerské pozice v TV Nova a HBO Europe (1996–2017), kde se mj. podílel na vývoji a výrobě oceňované minisérie Hořící keř (Agnieszka Holland, 2013). Byl proděkanem FAMU pro mezinárodní vztahy a vedoucím katedry FAMU International (2017–2021) a v současnosti vyučuje na Katedře divadelních a filmových studií Univerzity Palackého v Olomouci.",
         en: "Since the early 1990s he has worked as a critic and curator, publishing in the monthly Film a doba, the daily press and film magazines, and serving on the programming team of the Karlovy Vary International Film Festival (1994–1998). He then held senior programming and management positions at TV Nova and HBO Europe (1996–2017), where he participated at development and production of the acclaimed miniseries Burning Bush (Agnieszka Holland, 2013). He served as Vice Dean for International Relations at FAMU and Chair of FAMU International (2017–2021), and currently teaches at Palacký University in Olomouc.",
       },
       {

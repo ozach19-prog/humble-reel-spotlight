@@ -45,7 +45,7 @@ export const projects: Project[] = [
     title: "Náhradníci",
     status: "produced",
     year: "2024",
-    format: { cs: "Komediální série", en: "Comedy series" },
+    format: { cs: "Komediální seriál", en: "Comedy series" },
     length: { cs: "8 × 55 min", en: "8 × 55 min" },
     logline: {
       cs: "Bezdětný pár se v touze po rodině uchýlí k náhradnímu mateřství, které tají před rodinou i přáteli. Jejich plán se zkomplikuje, když se jednoho dne těhotná náhradní matka Mariam z Gruzie objeví u jejich dveří, s dvěma vlastními dětmi a na útěku před svým násilným partnerem. ",
@@ -99,10 +99,10 @@ export const projects: Project[] = [
 
   {
     slug: "mlada-krev",
-    title: "Young Blood (Mladá krev)",
+    title: "Mladá krev",
     status: "produced",
     year: "2025",
-    format: { cs: "Kriminální série", en: "Crime series" },
+    format: { cs: "Kriminální seriál", en: "Crime series" },
     length: { cs: "16 × 55 min", en: "16 × 55 min" },
     logline: {
       cs: "Na krajském oddělení vražd se energie a nové metody mladých adeptů střetávají s rutinou ostřílených kriminalistů — a všechny případy spojuje jedna nevyřešená vražda.",
