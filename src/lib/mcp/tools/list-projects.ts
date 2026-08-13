@@ -25,7 +25,7 @@ export default defineTool({
       .filter((p) => !status || p.status === status)
       .map((p) => ({
         slug: p.slug,
-        title: p.title,
+        title: p.title[lang],
         status: p.status,
         statusLabel: statusShort[p.status][lang],
         year: p.year,

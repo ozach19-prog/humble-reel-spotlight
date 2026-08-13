@@ -29,7 +29,7 @@ export default defineTool({
     const lang = language ?? "en";
     const detail = {
       slug: project.slug,
-      title: project.title,
+      title: project.title[lang],
       status: project.status,
       statusLabel: statusShort[project.status][lang],
       year: project.year,

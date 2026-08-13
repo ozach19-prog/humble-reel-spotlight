@@ -10,7 +10,7 @@ type Bi = { cs: string; en: string };
 
 export type Project = {
   slug: string;
-  title: string;
+  title: Bi;
   status: ProjectStatus;
   year: string;
   format: Bi;
@@ -42,7 +42,7 @@ const roles = {
 export const projects: Project[] = [
   {
     slug: "nahradnici",
-    title: "Náhradníci",
+    title: { cs: "Náhradníci", en: "Náhradníci" },
     status: "produced",
     year: "2024",
     format: { cs: "Komediální seriál", en: "Comedy series" },
@@ -99,7 +99,7 @@ export const projects: Project[] = [
 
   {
     slug: "mlada-krev",
-    title: "Mladá krev",
+    title: { cs: "Mladá krev", en: "Mladá krev" },
     status: "produced",
     year: "2025",
     format: { cs: "Kriminální seriál", en: "Crime series" },
@@ -148,7 +148,7 @@ export const projects: Project[] = [
 
   {
     slug: "marika",
-    title: "Marika",
+    title: { cs: "Marika", en: "Marika" },
     status: "production",
     year: "2027",
     format: { cs: "Venkovský thriller", en: "Crime Drama" },
@@ -188,7 +188,7 @@ export const projects: Project[] = [
   },
   {
     slug: "mlada-krev-ii",
-    title: "Mladá krev II",
+    title: { cs: "Mladá krev II", en: "Mladá krev II" },
     status: "development",
     year: "2027",
     format: { cs: "Kriminální série", en: "Crime series" },
@@ -224,7 +224,7 @@ export const projects: Project[] = [
 
   {
     slug: "ctyrhra",
-    title: "Čtyřhra",
+    title: { cs: "Čtyřhra", en: "Čtyřhra" },
     status: "development",
     year: "2028",
     format: { cs: "Dramedy ", en: "Dramedy series" },
