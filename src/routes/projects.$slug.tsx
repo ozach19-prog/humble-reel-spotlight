@@ -10,8 +10,10 @@ import { useLang } from "@/lib/language";
 export const Route = createFileRoute("/projects/$slug")({
   head: ({ params }) => {
     const project = getProject(params.slug);
-    const title = project ? `${project.title.cs} — Pozitiv Films` : "Projekt — Pozitiv Films";
-    const description = project ? project.logline.cs : copy.notFoundText.cs;
+    const title = project
+      ? `${project.title.cs} — Pozitiv Films - Boutique production company for television and film, Prague`
+      : "Projekt — Pozitiv Films - Boutique production company for television and film, Prague";
+    const description = "About us and our projects: past, current and future";
     return {
       meta: [
         { title },

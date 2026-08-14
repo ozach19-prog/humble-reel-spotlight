@@ -84,11 +84,10 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Pozitiv Films — Boutique Film Production" },
+      { title: "Pozitiv Films - Boutique production company for television and film, Prague" },
       {
         name: "description",
-        content:
-          "Pozitiv Films is a small film production company in Prague making documentaries, commercials and brand films.",
+        content: "About us and our projects: past, current and future",
       },
       { name: "author", content: "Pozitiv Films s.r.o." },
       { property: "og:type", content: "website" },

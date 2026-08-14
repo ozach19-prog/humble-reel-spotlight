@@ -13,26 +13,25 @@ import { useLang } from "@/lib/language";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Pozitiv Films — butiková filmová produkce, Praha" },
+      { title: "Pozitiv Films - Boutique production company for television and film, Prague" },
       {
         name: "description",
-        content:
-          "Butiková produkční společnost z Prahy. Dokumentární a hrané filmy — dokončené projekty, projekty ve výrobě a ve vývoji.",
+        content: "About us and our projects: past, current and future",
       },
-      { property: "og:title", content: "Pozitiv Films — butiková filmová produkce" },
+      { property: "og:title", content: "Pozitiv Films - Boutique production company for television and film, Prague" },
       {
         property: "og:description",
-        content: "Dokumentární a hrané filmy z Prahy. Malý štáb, skutečné příběhy.",
+        content: "About us and our projects: past, current and future",
       },
       { property: "og:url", content: "/" },
       { property: "og:type", content: "website" },
       { property: "og:site_name", content: "Pozitiv Films" },
       { property: "og:locale", content: "cs_CZ" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:title", content: "Pozitiv Films — butiková filmová produkce" },
+      { name: "twitter:title", content: "Pozitiv Films - Boutique production company for television and film, Prague" },
       {
         name: "twitter:description",
-        content: "Dokumentární a hrané filmy z Prahy. Malý štáb, skutečné příběhy.",
+        content: "About us and our projects: past, current and future",
       },
     ],
     links: [{ rel: "canonical", href: "/" }],
