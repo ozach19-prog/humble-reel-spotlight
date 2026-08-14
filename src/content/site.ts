@@ -39,7 +39,7 @@ export const nav: { to: string; hash?: string; label: Bi }[] = [
 export const copy = {
   heroLine1: { cs: "Pozitiv Films", en: "We love what we do. " },
   heroLine2: {
-    cs: "Produkční společnost pro současnout televizi a film",
+    cs: "Produkční společnost pro současnou televizi a film",
     en: "We do only what we love.",
   },
   heroText: {
