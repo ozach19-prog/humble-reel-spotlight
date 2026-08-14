@@ -9,26 +9,25 @@ import { useLang } from "@/lib/language";
 export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
-      { title: "O nás — Pozitiv Films" },
+      { title: "O nás — Pozitiv Films - Boutique production company for television and film, Prague" },
       {
         name: "description",
-        content:
-          "Kdo jsme: dva zakladatelé butikové produkční společnosti Pozitiv Films, jejich cesta a filmografie.",
+        content: "About us and our projects: past, current and future",
       },
-      { property: "og:title", content: "O nás — Pozitiv Films" },
+      { property: "og:title", content: "O nás — Pozitiv Films - Boutique production company for television and film, Prague" },
       {
         property: "og:description",
-        content: "Dva zakladatelé, malý štáb a filmy, u kterých zůstáváme do konce.",
+        content: "About us and our projects: past, current and future",
       },
       { property: "og:url", content: "/about" },
       { property: "og:type", content: "profile" },
       { property: "og:site_name", content: "Pozitiv Films" },
       { property: "og:locale", content: "cs_CZ" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:title", content: "O nás — Pozitiv Films" },
+      { name: "twitter:title", content: "O nás — Pozitiv Films - Boutique production company for television and film, Prague" },
       {
         name: "twitter:description",
-        content: "Dva zakladatelé, malý štáb a filmy, u kterých zůstáváme do konce.",
+        content: "About us and our projects: past, current and future",
       },
     ],
     links: [{ rel: "canonical", href: "/about" }],
