@@ -85,13 +85,7 @@ function Home() {
 
         <section className="mx-auto max-w-5xl px-6 py-16 sm:py-24">
           <SectionLabel>{copy.aboutTag[lang]}</SectionLabel>
-          <div
-            className={
-              copy.aboutHeading[lang].trim()
-                ? "mt-8 grid gap-10 md:grid-cols-[1fr_1.2fr]"
-                : "mt-8 max-w-3xl"
-            }
-          >
+          <div className="mt-8 grid gap-10 md:grid-cols-[1fr_1.2fr]">
             <h2 className="text-2xl sm:text-3xl">
               {copy.aboutHeading[lang].trim() || copy.aboutTag[lang]}
             </h2>
