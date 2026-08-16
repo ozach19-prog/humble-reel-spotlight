@@ -48,7 +48,7 @@ function AboutPage() {
         {copy.aboutPageHeading[lang].trim() ? (
           <h1 className="mt-6 max-w-2xl text-3xl sm:text-5xl">{copy.aboutPageHeading[lang]}</h1>
         ) : (
-          <h1 className="sr-only">{copy.aboutPageTag[lang]}</h1>
+          <h1 className="mt-6 max-w-2xl text-3xl sm:text-5xl">{copy.aboutPageTag[lang]}</h1>
         )}
         <div className="mt-8 max-w-2xl space-y-4 leading-relaxed text-muted-foreground">
           {copy.aboutPageParagraphs
