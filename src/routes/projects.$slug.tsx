@@ -30,6 +30,26 @@ export const Route = createFileRoute("/projects/$slug")({
         ...(project ? [] : [{ name: "robots", content: "noindex" }]),
       ],
       links: [{ rel: "canonical", href: `/projects/${params.slug}` }],
+      scripts: project
+        ? [
+            {
+              type: "application/ld+json",
+              children: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "Article",
+                headline: project.title.cs,
+                description: project.logline.cs,
+                image: project.still,
+                url: `https://www.pozitiv-films.cz/projects/${params.slug}`,
+                publisher: {
+                  "@type": "Organization",
+                  name: "Pozitiv Films",
+                  url: "https://www.pozitiv-films.cz",
+                },
+              }),
+            },
+          ]
+        : [],
     };
   },
 
