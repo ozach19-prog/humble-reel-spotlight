@@ -35,6 +35,26 @@ export const Route = createFileRoute("/")({
       },
     ],
     links: [{ rel: "canonical", href: "/" }],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          name: "Pozitiv Films",
+          legalName: "Pozitiv Films s.r.o.",
+          url: "https://www.pozitiv-films.cz",
+          email: "info@pozitiv-films.cz",
+          telephone: "+420 603 252 565",
+          sameAs: ["https://www.instagram.com/pozitiv_films/"],
+          address: {
+            "@type": "PostalAddress",
+            addressLocality: "Praha",
+            addressCountry: "CZ",
+          },
+        }),
+      },
+    ],
   }),
 
   component: Home,
