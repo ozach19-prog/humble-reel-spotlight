@@ -35,6 +35,26 @@ export const Route = createFileRoute("/")({
       },
     ],
     links: [{ rel: "canonical", href: "/" }],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          name: "Pozitiv Films",
+          legalName: "Pozitiv Films s.r.o.",
+          url: "https://www.pozitiv-films.cz",
+          email: "info@pozitiv-films.cz",
+          telephone: "+420 603 252 565",
+          sameAs: ["https://www.instagram.com/pozitiv_films/"],
+          address: {
+            "@type": "PostalAddress",
+            addressLocality: "Praha",
+            addressCountry: "CZ",
+          },
+        }),
+      },
+    ],
   }),
 
   component: Home,
@@ -85,16 +105,10 @@ function Home() {
 
         <section className="mx-auto max-w-5xl px-6 py-16 sm:py-24">
           <SectionLabel>{copy.aboutTag[lang]}</SectionLabel>
-          <div
-            className={
-              copy.aboutHeading[lang].trim()
-                ? "mt-8 grid gap-10 md:grid-cols-[1fr_1.2fr]"
-                : "mt-8 max-w-3xl"
-            }
-          >
-            {copy.aboutHeading[lang].trim() ? (
-              <h2 className="text-2xl sm:text-3xl">{copy.aboutHeading[lang]}</h2>
-            ) : null}
+          <div className="mt-8 grid gap-10 md:grid-cols-[1fr_1.2fr]">
+            <h2 className="text-2xl sm:text-3xl">
+              {copy.aboutHeading[lang].trim() || copy.aboutTag[lang]}
+            </h2>
             <div className="space-y-4 text-muted-foreground leading-relaxed">
               {copy.aboutParagraphs
                 .slice(0, 2)
