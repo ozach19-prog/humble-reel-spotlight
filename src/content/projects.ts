@@ -53,7 +53,7 @@ export const projects: Project[] = [
     },
     synopsis: [
       {
-        cs: "Po deseti letech neúspěšných pokusů o početí se Eva a Otakar Krásovi rozhodnou pro náhradní mateřství. Specializovaná agentura v Gruzii jim najde Mariam — mladou, inteligentní matku dvou dcer, pro kterou je tato \"zakázka\" šancí uniknout z tíživé životní situace.",
+        cs: 'Po deseti letech neúspěšných pokusů o početí se Eva a Otakar Krásovi rozhodnou pro náhradní mateřství. Specializovaná agentura v Gruzii jim najde Mariam — mladou, inteligentní matku dvou dcer, pro kterou je tato "zakázka" šancí uniknout z tíživé životní situace.',
         en: "After a decade of unsuccessful attempts at natural and assisted conception, Eva and Otakar Krása turn to surrogacy as their last resort to start a family. Due to the legal ambiguity of surrogate motherhood in the Czech Republic, they seek the help of an agency in Georgia. There, they discover Mariam, a young, intelligent single mother of two beautiful daughters for whom surrogacy represents a chance to escape her dire living conditions.",
       },
       {
@@ -160,10 +160,10 @@ export const projects: Project[] = [
     synopsis: [
       {
         cs: "Kombinace kriminální zápletky s lehce komickým tónem připomíná Fargo, téma rodiny, jíž se vnější ohrožení stane katalyzátorem domácích vztahů, zase Ozark. Původní zločin, spáchaný vlastně z malichernosti, zatahuje obyčejný manželský pár do stále spletitější sítě lží, manipulací a dalších trestných činů — a boží mlýny melou pomalu, ale najisto.",
-        en: "The crime plot with its lightly comic tone recalls Fargo, while the theme of a family for whom an outside threat becomes the catalyst of its own domestic reckoning echoes Ozark. An original crime, committed out of sheer pettiness, pulls an ordinary married couple into an ever more tangled web of lies, manipulation and further offences — and the mills of God grind slowly, but they grind sure.",
+        en: "The crime plot with its lightly comic tone recalls Fargo, while the theme of a family for whom an outside threat becomes the catalyst of its own domestic reckoning echoes Ozark. An original crime, committed out of sheer pettiness, pulls an ordinary married couple into a tangled web of lies, manipulation and crimes — and the mills of God grind slowly, but they grind sure.",
       },
       {
-        cs: "Realizace podzim 2027 - Jaro 2028",
+        cs: "Realizace podzim 2026 - Jaro 2027",
         en: "Production September 2026 - March 2027 ",
       },
     ],
@@ -173,7 +173,7 @@ export const projects: Project[] = [
       { role: roles.dop, name: "Matěj Cibulka, Oliver Záhlava" },
       { role: roles.designer, name: "Jan Vlasák" },
       { role: roles.costume, name: "Katarína Hollá" },
-      { role: roles.editor, name: "Filip Issa" },
+      { role: roles.editor, name: "Filip Issa. Vasil Skalenakis" },
       { role: roles.casting, name: "Madla Zachariášová, Jam Casting" },
       {
         role: roles.producer,
