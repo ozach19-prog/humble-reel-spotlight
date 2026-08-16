@@ -115,7 +115,7 @@ export const projects: Project[] = [
       },
       {
         cs: "Každá epizoda přináší nový případ, na jehož vyšetřování spolupracuje dvojice složená z mladého adepta a zkušeného profesionála. Děj se odehrává v Hradci, kde se velké kauzy mísí s lokální kriminalitou.",
-        en: "Each episode brings a new case investigated by a pair made up of a young recruit and an experienced professional. The story is set in Hradec, where major cases mix with local crime.",
+        en: "Each episode brings a new case investigated by a pair composed of a young recruit and an experienced professional. The story is set in Hradec, where major cases mix with local crime.",
       },
       {
         cs: "Epizodické případy propojuje větší ústřední záhada — nevyřešená vražda ženy zastřelené na břehu rybníka. Tato linka postupně odhaluje, že pachatel může být blíž, než si kdokoli myslí.",
@@ -160,7 +160,7 @@ export const projects: Project[] = [
     synopsis: [
       {
         cs: "Kombinace kriminální zápletky s lehce komickým tónem připomíná Fargo, téma rodiny, jíž se vnější ohrožení stane katalyzátorem domácích vztahů, zase Ozark. Původní zločin, spáchaný vlastně z malichernosti, zatahuje obyčejný manželský pár do stále spletitější sítě lží, manipulací a dalších trestných činů — a boží mlýny melou pomalu, ale najisto.",
-        en: "The crime plot with its lightly comic tone recalls Fargo, while the theme of a family for whom an outside threat becomes the catalyst of its own domestic reckoning echoes Ozark. An original crime, committed out of sheer pettiness, pulls an ordinary married couple into a tangled web of lies, manipulation and crimes — and the mills of God grind slowly, but they grind sure.",
+        en: "The crime plot, with its lightly comic tone, recalls Fargo, while the theme of a family for whom an outside threat becomes the catalyst of its own domestic reckoning echoes Ozark. An original crime, committed out of sheer pettiness, pulls an ordinary married couple into a tangled web of lies, manipulation and crimes — and the mills of God grind slowly, but they grind sure.",
       },
       {
         cs: "Realizace podzim 2026 - Jaro 2027",
