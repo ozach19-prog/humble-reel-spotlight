@@ -60,6 +60,9 @@ function AboutPage() {
 
         <div className="mt-16">
           <SectionLabel>{copy.foundersTag[lang]}</SectionLabel>
+          <h2 className="mt-6 text-2xl sm:text-3xl">
+            {copy.foundersHeading[lang].trim() || copy.foundersTag[lang]}
+          </h2>
           <div className="mt-10 space-y-14">
             {founders.map((f) => (
               <FounderCard key={f.name} founder={f} full />
