@@ -92,9 +92,9 @@ function Home() {
                 : "mt-8 max-w-3xl"
             }
           >
-            {copy.aboutHeading[lang].trim() ? (
-              <h2 className="text-2xl sm:text-3xl">{copy.aboutHeading[lang]}</h2>
-            ) : null}
+            <h2 className="text-2xl sm:text-3xl">
+              {copy.aboutHeading[lang].trim() || copy.aboutTag[lang]}
+            </h2>
             <div className="space-y-4 text-muted-foreground leading-relaxed">
               {copy.aboutParagraphs
                 .slice(0, 2)
